@@ -6,7 +6,7 @@
     <h3>Dashboard</h3>
     <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Generate report</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
         <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
@@ -87,32 +87,20 @@
 
 <!-- row -->
 <div class="row mt-4">
-    <div class="col-lg-8"></div>
+    <div class="col-lg-8">
+        <!-- internal_projects -->
+        {% include 'dashboard/internal_projects.html' %}
+    </div>
 
-    <!-- Visitors' Browser -->
     <div class="col-lg-4">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Visitors' Browser</h4>
-                <div class="d-flex justify-content-center">
-                    <canvas id="visitorBrowser" style="height: 300; width: 300;"></canvas>
-                </div>
-                <!-- table  -->
-                <table class="table table-responsive mt-4">
-                    {% for i in vistors_browser %}
-                    <tr>
-                        <td>
-                            <i class="bi bi-circle-fill bg-dark" style="color: {{ i.color }};"></i>
-                            &nbsp;&nbsp;{{i.browser }}
-                        </td>
-                        <td>
-                            {{ i.visits }}%
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </table>
-            </div>
-        </div>
+        <!-- Visitors' Browser -->
+        {% include 'dashboard/visitor_browser.html' %}
+
+        <!-- recently added products -->
+        {% include 'dashboard/recently_added_products.html' %}
+
+        <!-- timeline -->
+       
     </div>
 </div>
 {% endblock main_content %}

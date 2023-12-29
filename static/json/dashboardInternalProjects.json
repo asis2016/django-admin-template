@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Social Media Marketing",
+        "completed_percentage": 80,
+        "bg": "bg-success"
+    },
+    {
+        "title": "AWS migration",
+        "completed_percentage": 20,
+        "bg": "bg-danger"
+    },
+    {
+        "title": "Payment Gateway Asia",
+        "completed_percentage": 60,
+        "bg": "bg-warning"
+    },
+    {
+        "title": "DE Warehouse Setup",
+        "completed_percentage": 90,
+        "bg": "bg-success"
+    },
+    {
+        "title": "SAP-ERP System",
+        "completed_percentage": 5,
+        "bg": "bg-danger"
+    }
+]

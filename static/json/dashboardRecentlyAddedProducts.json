@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Smart Home Hub 2.0",
+    "price": 149.99,
+    "short_description": "Voice-controlled hub for smart home."
+  },
+  {
+    "title": "HyperFit Fitness Tracker",
+    "price": 79.99,
+    "short_description": "Great tracker for steps, heart rate, and sleep."
+  },
+  {
+    "title": "QuantumEdge Gaming Laptop",
+    "price": 1599.99,
+    "short_description": "High-performance gaming laptop."
+  },
+  {
+    "title": "EcoCharge Solar Power Bank",
+    "price": 49.99,
+    "short_description": "Solar-powered charger for on-the-go device."
+  },
+  {
+    "title": "ChefPro Smart Cooking Pot",
+    "price": 129.99,
+    "short_description": "Intelligent cooking pot with app monitoring."
+  },
+  {
+    "title": "EnviroGuard Air Purifier",
+    "price": 199.99,
+    "short_description": "HEPA air purifier with smart sensors."
+  }
+]

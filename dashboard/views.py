@@ -22,7 +22,9 @@ class DashboardTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['internal_projects'] = self.get_json_data('dashboardInternalProjects.json')
         context['quick_info_data'] = self.get_json_data('dashboardQuickInfo.json')
         context['order_status'] = self.get_json_data('dashboardOrderStatus.json')
+        context['recently_added_products'] = self.get_json_data('dashboardRecentlyAddedProducts.json')
         context['vistors_browser'] = self.get_json_data('visitorsBrowser.json')
         return context
