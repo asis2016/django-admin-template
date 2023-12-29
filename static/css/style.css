@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+body {
+  font-family: 'Poppins', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif; }
+
+.card {
+  color: #fff;
+  background-color: #1d1e24; }
+  .card .card-footer {
+    border-top: 1px solid #2c2e33; }
+
+.cardQuickInfo .card-body {
+  display: flex;
+  justify-content: space-between; }
+  .cardQuickInfo .card-body p {
+    margin-bottom: 0; }
+  .cardQuickInfo .card-body i {
+    font-size: 2rem;
+    color: var(--bs-teal) !important; }
+.cardQuickInfo .card-footer a {
+  color: #a4a6ae;
+  text-decoration: none; }
+  .cardQuickInfo .card-footer a:hover {
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

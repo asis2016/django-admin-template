@@ -1,0 +1,22 @@
+[
+    {
+        "title": "$ 200K",
+        "description": "Total earnings",
+        "icon": "<i class='bi bi-currency-dollar'></i>"
+    },
+    {
+        "title": "29%",
+        "description": "Total bounce rate",
+        "icon": "<i class='bi bi-globe-americas'></i>"
+    },
+    {
+        "title": "499",
+        "description": "New users registration",
+        "icon": "<i class='bi bi-person-fill-add'></i>"
+    },
+    {
+        "title": "$ 10.5k",
+        "description": "Yearly expense report",
+        "icon": "<i class='bi bi-receipt'></i>"
+    }
+]
