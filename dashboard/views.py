@@ -9,12 +9,19 @@ import json
 class DashboardTemplateView(TemplateView):
     template_name = 'dashboard/dashboard.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        json_file = find('json/dashboardQuickInfo.json')
+    def get_json_data(self, json_file):
+        '''
+        Return json_data
+        '''
+        json_file_path = find('json/' + json_file)
 
-        with open(json_file, 'r') as file:
+        with open(json_file_path, 'r') as file:
             data = json.load(file)
 
-        context['quick_info_data'] = data
+        return data
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['quick_info_data'] = self.get_json_data('dashboardQuickInfo.json')
+        context['order_status'] = self.get_json_data('dashboardOrderStatus.json')
         return context

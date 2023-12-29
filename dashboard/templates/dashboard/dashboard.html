@@ -2,8 +2,9 @@
 
 {% block main_content %}
 {{ json_data }}
-<div class="row mt-4">
 
+<!-- row for cardQuickInfo -->
+<div class="row mt-4">
     {% for i in quick_info_data %}
     <div class="col-lg-3">
         <div class="card cardQuickInfo">
@@ -24,6 +25,49 @@
         </div>
     </div>
     {% endfor %}
+</div>
+<!-- row for cardQuickInfo ends -->
 
+<!-- row for orderStatus -->
+<div class="row mt-4">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Order Status</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Client</th>
+                            <th>Order no</th>
+                            <th>Product</th>
+                            <th>Selling price</th>
+                            <th>Payment mode</th>
+                            <th>Date</th>
+                            <th>Payment status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in order_status %}
+                        <tr>
+                            <td>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </td>
+                            <td class="d-flex align-items-center">
+                                <span class="nameInitial">{{ i.client_initial}}</span>&nbsp;&nbsp;{{ i.client_name }}
+                            </td>
+                            <td>{{ i.order_no }} </td>
+                            <td>{{ i.product_title }} </td>
+                            <td>{{ i.product_price }} </td>
+                            <td>{{ i.payment_mode }} </td>
+                            <td>{{ i.date }} </td>
+                            <td>{{ i.payment_status|safe }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock main_content %}
