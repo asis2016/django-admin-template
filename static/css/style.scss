@@ -37,6 +37,7 @@ h4 {
  */
 .table {
     color: $text_primary_color;
+    background-color: $bg_primary_color;
 
     thead {
         tr {
@@ -64,14 +65,31 @@ h4 {
         padding: 0.9375rem;
         line-height: 1;
         white-space: nowrap;
+        background-color: $bg_primary_color;
+        color: $text_primary_color;
     }
 }
 
 /*
  * ----- ----- ----- .sidebar ----- ----- -----
  */
-.sidebar {
+#mainSidebar {
+    min-width: 20rem;
+    // height: 100vh;
     background-color: $bg_primary_color;
+    transition: margin 0.25s ease-out;
+}
+
+.sidebarToggled #mainSidebar {
+    margin-left: -20rem;
+}
+
+/*
+ * ----- ----- ----- #pageContent ----- ----- -----
+ */
+#pageContent {
+    min-width: 0;
+    width: 100%;
 }
 
 /*
@@ -107,13 +125,13 @@ h4 {
     color: $text_primary_color;
     background-color: $bg_primary_color;
 
-    .card-header{
+    .card-header {
         border-bottom: 1px solid $border_primary_color;
         text-transform: capitalize;
         font-size: 1.125rem;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 500;
-line-height: 1.2;
+        line-height: 1.2;
     }
 
     .card-title {
@@ -205,3 +223,11 @@ line-height: 1.2;
     width: 40px;
     align-items: center;
 }
+
+/*
+ * ----- ----- ----- footer ----- ----- -----
+ */
+
+ footer{
+    color: $text_primary_color;
+ }
