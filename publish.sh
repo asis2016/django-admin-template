@@ -2,7 +2,7 @@
 
 
 #demo "web scrapping"
-wget -p -k -nH -P demo/ 127.0.0.1:8000
+wget -p -k -nH -P docs/ 127.0.0.1:8000
 
 
 #git
