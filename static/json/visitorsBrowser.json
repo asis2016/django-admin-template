@@ -1,0 +1,37 @@
+[
+  {
+    "browser": "Safari",
+    "visits": 10,
+    "color": "red"
+  },
+  {
+    "browser": "Chrome",
+    "visits": 21,
+    "color": "yellow"
+
+  },
+  {
+    "browser": "IE",
+    "visits": 19,
+    "color": "green"
+
+  },
+  {
+    "browser": "Opera",
+    "visits": 5,
+    "color": "purple"
+
+  },
+  {
+    "browser": "Firefox",
+    "visits": 42,
+    "color": "orange"
+
+  },
+  {
+    "browser": "Others",
+    "visits": 3,
+    "color": "indigo"
+
+  }
+]

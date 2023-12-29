@@ -3,19 +3,22 @@
 
 // $primary_dark: #191c24;
 $primary_dark: #1d1e24;
-$border_color: #2c2e33;
+$border_primary_color: #2c2e33;
 
 //
-$text_primary: #fff;
+$text_primary_color: #fff;
 $text_secondary: #a4a6ae;
 
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: black;
-    color: $text_primary;
+    color: $text_primary_color;
 }
 
+/*
+ * ----- ----- ----- heading ----- ----- -----
+ */
 h1,
 h2,
 h3,
@@ -29,8 +32,11 @@ h4 {
     font-size: 1.125rem;
 }
 
+/*
+ * ----- ----- ----- .table ----- ----- -----
+ */
 .table {
-    color: $text_primary;
+    color: $text_primary_color;
 
     thead {
         tr {
@@ -38,7 +44,7 @@ h4 {
             border-width: 0;
 
             th {
-                border-bottom-color: $border_color !important;
+                border-bottom-color: $border_primary_color !important;
             }
         }
     }
@@ -47,7 +53,7 @@ h4 {
         tr {
             border-style: solid;
             border-width: 0;
-            border-color: $border_color;
+            border-color: $border_primary_color;
         }
     }
 
@@ -61,7 +67,17 @@ h4 {
     }
 }
 
-// badge
+/*
+ * ----- ----- ----- .btn ----- ----- -----
+ */
+.btn-outline-secondary {
+    color: $text_primary_color;
+    border-color: $border_primary_color;
+}
+
+/*
+ * ----- ----- ----- .badge ----- ----- -----
+ */
 .badge-outline-success {
     color: var(--bs-success);
     border: 1px solid var(--bs-success);
@@ -77,8 +93,11 @@ h4 {
     border: 1px solid var(--bs-red);
 }
 
+/*
+ * ----- ----- ----- .card ----- ----- -----
+ */
 .card {
-    color: $text_primary;
+    color: $text_primary_color;
     background-color: $primary_dark;
 
     .card-title {
@@ -87,11 +106,17 @@ h4 {
     }
 
     .card-footer {
-        border-top: 1px solid $border_color;
+        border-top: 1px solid $border_primary_color;
     }
 }
 
-// components
+/*
+ * ----- ----- ----- Components ----- ----- -----
+ */
+.pageTitle {
+    border-bottom: 1px solid $border_primary_color;
+}
+
 .cardQuickInfo {
     .card-body {
         display: flex;
@@ -113,7 +138,7 @@ h4 {
             text-decoration: none;
 
             &:hover {
-                color: $text_primary;
+                color: $text_primary_color;
             }
         }
     }
