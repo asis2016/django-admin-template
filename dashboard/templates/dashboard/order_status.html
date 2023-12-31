@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-body table-responsive">
+        <h4 class="card-title">Order Status</h4>
+        <div class="table-responsive">
+            <table class="table overflow-scroll table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Client</th>
+                        <th>Order no</th>
+                        <th>Product</th>
+                        <th>Selling price</th>
+                        <th>Payment mode</th>
+                        <th>Date</th>
+                        <th>Payment status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in order_status %}
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">{{ i.client_initial}}</span>&nbsp;&nbsp;{{ i.client_name }}
+                        </td>
+                        <td>{{ i.order_no }} </td>
+                        <td>{{ i.product_title }} </td>
+                        <td>{{ i.product_price }} </td>
+                        <td>{{ i.payment_mode }} </td>
+                        <td>{{ i.date }} </td>
+                        <td>{{ i.payment_status|safe }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

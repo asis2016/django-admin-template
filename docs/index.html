@@ -20,7 +20,6 @@
 
     <!-- Favicons -->
 
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -42,99 +41,163 @@
 </head>
 
 <body>
-    <!-- header -->
     <div class="wrapper d-flex">
         <!-- #mainSidebar -->
         <nav id="mainSidebar">
-    <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
+    <div class="d-flex flex-column flex-shrink-0 p-3">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi pe-none me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Sidebar</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html#">
-                    <span data-feather="home"></span>
+                <a href="index.html#" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="index.html#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
                     Dashboard
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="file"></span>
+            <li>
+                <a href="index.html#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
                     Orders
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="shopping-cart"></span>
+            <li>
+                <a href="index.html#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#grid"></use>
+                    </svg>
                     Products
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="users"></span>
+            <li>
+                <a href="index.html#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
                     Customers
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="bar-chart-2"></span>
-                    Reports
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="layers"></span>
-                    Integrations
-                </a>
-            </li>
         </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
-            <a class="link-secondary" href="index.html#" aria-label="Add a new report">
-                <span data-feather="plus-circle"></span>
+        <hr>
+        <div class="dropdown">
+            <a href="index.html#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>mdo</strong>
             </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="file-text"></span>
-                    Current month
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="file-text"></span>
-                    Last quarter
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="file-text"></span>
-                    Social engagement
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#">
-                    <span data-feather="file-text"></span>
-                    Year-end sale
-                </a>
-            </li>
-        </ul>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" style="">
+                <li><a class="dropdown-item" href="index.html#">New project...</a></li>
+                <li><a class="dropdown-item" href="index.html#">Settings</a></li>
+                <li><a class="dropdown-item" href="index.html#">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="index.html#">Sign out</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
         <!-- #mainSidebar ends -->
 
         <!-- #pageContent -->
         <div id="pageContent">
-            <div class="container-fluid">
-                <div class="row">
-                    <main class="col-lg-12 ms-sm-auto px-md-4">
-                        <!-- main_content -->
-                        
-<!-- page title -->
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 pageTitle">
+            <!-- top nav -->
+            <div id="topNavigation" class="px-3 py-2">
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!-- nav-left, breadcrumb -->
+            <a href="index.html#"
+                class="nav-left d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <i class="bi bi-list" id="sidebarToggleBtn"></i>
+            </a>
 
-    <!--  -->
-    <button id="sidebarToggleBtn">Toggle</button>
-    
+            <!-- form -->
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <div class="input-group text-white">
+                    <input type="text" class="form-control form-control-dark text-bg-dark text-white" value="search...">
+                    <button class="btn" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- nav-right -->
+            <div class="nav-right col-12 col-lg-auto my-2">
+                <!-- breadcrumb -->
+                <ul class="nav navRightBreadcrumb d-none">
+                    <li>
+                        <a href="index.html#" class="nav-link text-white">
+                            <i class="bi bi-list" id="sidebarToggleBtn"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- nav -->
+                <ul class="nav">
+                    <!-- Email -->
+                    <li>
+                        <a href="index.html#" class="nav-link text-white">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </li>
+                    <!-- notification -->
+                    <li>
+                        <a href="index.html#" class="nav-link text-white">
+                            <i class="bi bi-bell"></i>
+                        </a>
+                    </li>
+                    <!-- gear -->
+                    <li>
+                        <a href="index.html#" class="nav-link text-white">
+                            <i class="bi bi-gear"></i>
+                        </a>
+                    </li>
+                    <!-- expand -->
+                    <li>
+                        <a href="index.html#" class="nav-link text-white">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="container-fluid px-4">
+                <!-- section searchForMobile -->
+                <div class="row my-4" id="searchForMobile">
+    <div class="col">
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control form-control-dark text-bg-dark text-white" value="search...">
+                <button class="btn" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+                <!-- main_content -->
+                
+<!-- page title -->
+<div class="pageTitle">
     <h3>Dashboard</h3>
     <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group me-2">
@@ -150,9 +213,9 @@
 <!-- page title ends -->
 
 <!-- row for cardQuickInfo -->
-<div class="row mt-4">
+<div class="row mt-4" id="sectionDashboardQuickInfo">
     
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
         <div class="card cardQuickInfo">
             <div class="card-body">
                 <div>
@@ -171,7 +234,7 @@
         </div>
     </div>
     
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
         <div class="card cardQuickInfo">
             <div class="card-body">
                 <div>
@@ -190,7 +253,7 @@
         </div>
     </div>
     
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
         <div class="card cardQuickInfo">
             <div class="card-body">
                 <div>
@@ -209,7 +272,7 @@
         </div>
     </div>
     
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
         <div class="card cardQuickInfo">
             <div class="card-body">
                 <div>
@@ -235,102 +298,104 @@
 <div class="row mt-4">
     <div class="col-lg-12">
         <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Order Status</h4>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Client</th>
-                            <th>Order no</th>
-                            <th>Product</th>
-                            <th>Selling price</th>
-                            <th>Payment mode</th>
-                            <th>Date</th>
-                            <th>Payment status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        <tr>
-                            <td>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </td>
-                            <td class="d-flex align-items-center">
-                                <span class="nameInitial">JD</span>&nbsp;&nbsp;John Doe
-                            </td>
-                            <td>ORD123456 </td>
-                            <td>Example Product </td>
-                            <td>49.99 </td>
-                            <td>Credit Card </td>
-                            <td>2023-01-01 </td>
-                            <td><div class='badge badge-outline-success'>Approved</div></td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </td>
-                            <td class="d-flex align-items-center">
-                                <span class="nameInitial">JS</span>&nbsp;&nbsp;Jane Smith
-                            </td>
-                            <td>ORD789012 </td>
-                            <td>Another Product </td>
-                            <td>29.99 </td>
-                            <td>PayPal </td>
-                            <td>2023-02-15 </td>
-                            <td><div class='badge badge-outline-danger'>Failed</div></td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </td>
-                            <td class="d-flex align-items-center">
-                                <span class="nameInitial">BJ</span>&nbsp;&nbsp;Bob Johnson
-                            </td>
-                            <td>ORD345678 </td>
-                            <td>Special Item </td>
-                            <td>99.99 </td>
-                            <td>Debit Card </td>
-                            <td>2023-03-20 </td>
-                            <td><div class='badge badge-outline-success'>Approved</div></td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </td>
-                            <td class="d-flex align-items-center">
-                                <span class="nameInitial">AB</span>&nbsp;&nbsp;Alice Brown
-                            </td>
-                            <td>ORD901234 </td>
-                            <td>Unique Product </td>
-                            <td>59.99 </td>
-                            <td>Bank Transfer </td>
-                            <td>2023-04-10 </td>
-                            <td><div class='badge badge-outline-warning'>Pending</div></td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </td>
-                            <td class="d-flex align-items-center">
-                                <span class="nameInitial">CG</span>&nbsp;&nbsp;Charlie Green
-                            </td>
-                            <td>ORD567890 </td>
-                            <td>Special Edition </td>
-                            <td>79.99 </td>
-                            <td>Credit Card </td>
-                            <td>2023-05-25 </td>
-                            <td><div class='badge badge-outline-success'>Approved</div></td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
+    <div class="card-body table-responsive">
+        <h4 class="card-title">Order Status</h4>
+        <div class="table-responsive">
+            <table class="table overflow-scroll table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Client</th>
+                        <th>Order no</th>
+                        <th>Product</th>
+                        <th>Selling price</th>
+                        <th>Payment mode</th>
+                        <th>Date</th>
+                        <th>Payment status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">JD</span>&nbsp;&nbsp;John Doe
+                        </td>
+                        <td>ORD123456 </td>
+                        <td>Example Product </td>
+                        <td>49.99 </td>
+                        <td>Credit Card </td>
+                        <td>2023-01-01 </td>
+                        <td><div class='badge badge-outline-success'>Approved</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">JS</span>&nbsp;&nbsp;Jane Smith
+                        </td>
+                        <td>ORD789012 </td>
+                        <td>Another Product </td>
+                        <td>29.99 </td>
+                        <td>PayPal </td>
+                        <td>2023-02-15 </td>
+                        <td><div class='badge badge-outline-danger'>Failed</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">BJ</span>&nbsp;&nbsp;Bob Johnson
+                        </td>
+                        <td>ORD345678 </td>
+                        <td>Special Item </td>
+                        <td>99.99 </td>
+                        <td>Debit Card </td>
+                        <td>2023-03-20 </td>
+                        <td><div class='badge badge-outline-success'>Approved</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">AB</span>&nbsp;&nbsp;Alice Brown
+                        </td>
+                        <td>ORD901234 </td>
+                        <td>Unique Product </td>
+                        <td>59.99 </td>
+                        <td>Bank Transfer </td>
+                        <td>2023-04-10 </td>
+                        <td><div class='badge badge-outline-warning'>Pending</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">CG</span>&nbsp;&nbsp;Charlie Green
+                        </td>
+                        <td>ORD567890 </td>
+                        <td>Special Edition </td>
+                        <td>79.99 </td>
+                        <td>Credit Card </td>
+                        <td>2023-05-25 </td>
+                        <td><div class='badge badge-outline-success'>Approved</div></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
         </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -378,9 +443,9 @@
 </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-12 col-xs-12">
         <!-- Visitors' Browser -->
-        <div class="card">
+        <div class="card sm-mt-2">
     <div class="card-body">
         <h4 class="card-title">Visitors' Browser</h4>
         <div class="d-flex justify-content-center">
@@ -540,38 +605,19 @@
 </div>
 
         <!-- timeline -->
-       
+
     </div>
 </div>
 
-                        <!-- main_content ends -->
-                    </main>
-                </div>
-
-                <!-- footer -->
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <div class="col-md-4 d-flex align-items-center">
-                        <a href="index.html" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
-                            <svg class="bi" width="30" height="24">
-                                <use xlink:href="#bootstrap"></use>
-                            </svg>
-                        </a>
-                        <span class="mb-3 mb-md-0">© 2023 Company, Inc</span>
-                    </div>
-
-                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li class="ms-3"><a class="text-body-secondary" href="index.html#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#twitter"></use>
-                                </svg></a></li>
-                        <li class="ms-3"><a class="text-body-secondary" href="index.html#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#instagram"></use>
-                                </svg></a></li>
-                        <li class="ms-3"><a class="text-body-secondary" href="index.html#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#facebook"></use>
-                                </svg></a></li>
-                    </ul>
-                </footer>
+                <!-- main_content ends -->
             </div>
+
+            <!-- footer -->
+            <footer class="py-3 mt-4 container-fluid">
+                <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
+                    <span class="mb-3 mb-md-0">© 2023 Ashish S. Maharjan</span>
+                </div>
+            </footer>
         </div>
         <!-- #pageContent ends -->
     </div>
@@ -584,59 +630,7 @@
     <script src="static/js/script.js"></script>
 
     
-<script>
-    const ctx = document.getElementById('visitorBrowser');
-
-    new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            labels: ['Safari', 'Chrome', 'IE', 'Opera', 'Firefox', 'Others'],
-            datasets: [{
-                data: [10, 20, 20, 5, 42, 3],
-                borderWidth: 1,
-                backgroundColor: ['red', 'yellow', 'green', 'purple', 'orange', 'indigo']
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    display: false  // Hide the legend
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function (context) {
-                            // Calculate the percentage and display it in the tooltip
-                            let dataSum = context.dataset.data.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                            let currentValue = context.dataset.data[context.dataIndex];
-                            let percentage = ((currentValue / dataSum) * 100).toFixed(2) + "%";
-                            return percentage;
-                        }
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    display: false  // Hide x-axis
-                },
-                y: {
-                    display: false  // Hide y-axis
-                }
-            },
-            layout: {
-                padding: {
-                    left: 0,
-                    right: 0,
-                    top: 0,
-                    bottom: 0
-                }
-            },
-            responsive: false,
-            height: 250, // Set the desired height
-            width: 250 // Set the desired width
-        }
-    });
-</script>
-
+    
 </body>
 
 </html>
