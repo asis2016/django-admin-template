@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    /*
+    /**
      * For sidebarToggled
-    */
-    const sidebarToggleBtn = $('#sidebarToggleBtn');
+     */
+    let sidebarToggleBtn = $('#sidebarToggleBtn');
 
     if (sidebarToggleBtn.length) {
         if (localStorage.getItem('amjSidebarToggle') === 'true') {
@@ -11,15 +11,28 @@ $(document).ready(function () {
 
         sidebarToggleBtn.on('click', function (event) {
             event.preventDefault();
+            console.log('clicked')
             $('body').toggleClass('sidebarToggled');
 
             localStorage.setItem('amjSidebarToggle', $('body').hasClass('sidebarToggled'));
         });
     }
 
+    /**
+     * For sidebarToggled
+     */
+    let sidebarUntoggleBtn = $('#sidebarUntoggleBtn');
+    sidebarUntoggleBtn.on('click', function (event) {
+        event.preventDefault();
+        console.log('clicked')
+        $('body').toggleClass('');
+        // $('.wrapper #mainSidebar').toggleClass('d-none');
+    });
 
-    /*
-     * For visitorBrowser
+
+
+    /**
+     * For sidebarToggled
      */
     const ctx = document.getElementById('visitorBrowser');
 

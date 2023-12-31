@@ -46,10 +46,10 @@
         <nav id="mainSidebar">
     <div class="d-flex flex-column flex-shrink-0 p-3">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <svg class="bi pe-none me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Sidebar</span>
+            <span class="fs-4">SM LOGO</span>
+            <span class="d-sm-none" id="sidebarUntoggleBtn">
+                <i class="bi bi-arrow-left-square-fill"></i>
+            </span>
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
@@ -120,7 +120,7 @@
             <!-- top nav -->
             <div id="topNavigation" class="px-3 py-2">
     <div class="container-fluid">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
             <!-- nav-left, breadcrumb -->
             <a href="index.html#"
                 class="nav-left d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -138,15 +138,7 @@
             </form>
 
             <!-- nav-right -->
-            <div class="nav-right col-12 col-lg-auto my-2">
-                <!-- breadcrumb -->
-                <ul class="nav navRightBreadcrumb d-none">
-                    <li>
-                        <a href="index.html#" class="nav-link text-white">
-                            <i class="bi bi-list" id="sidebarToggleBtn"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="nav-right col-lg-auto my-2">
                 <!-- nav -->
                 <ul class="nav">
                     <!-- Email -->
@@ -181,7 +173,7 @@
 
             <div class="container-fluid px-4">
                 <!-- section searchForMobile -->
-                <div class="row my-4" id="searchForMobile">
+                <div class="row my-4 sm-my-4 sm-mt-0" id="searchForMobile">
     <div class="col">
         <form>
             <div class="input-group">
@@ -197,7 +189,7 @@
                 <!-- main_content -->
                 
 <!-- page title -->
-<div class="pageTitle">
+<div class="pageTitle pt-4 sm-pt-0">
     <h3>Dashboard</h3>
     <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group me-2">
