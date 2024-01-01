@@ -13,28 +13,7 @@
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-
-    <!-- Favicons -->
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
+    <!-- TODO: Favicons -->
 
     
     
@@ -46,14 +25,11 @@
         <nav id="mainSidebar">
     <div class="d-flex flex-column flex-shrink-0 p-3">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            
             <!-- logo for LG screen -->
             <span class="fs-4 logo-lg sm-d-none">Amaharjan</span>
-
             <!-- logo for SM screen -->
             <span class="fs-4 logo-sm lg-d-none">AMJ</span>
-            
-            <!-- for SM screen -->
+            <!-- for SM screen - close -->
             <span class="d-sm-none" id="sidebarUntoggleBtn">
                 <i class="bi bi-x-circle-fill"></i>
             </span>
@@ -90,7 +66,7 @@
                     ChatJS
                 </a>
             </li>
-            
+
             <!-- accounts -->
             <p class="my-2 text-secondary text-small">ACCOUNTS</p>
             <li>
@@ -115,7 +91,7 @@
             <!-- others -->
             <p class="my-2 text-secondary text-small">OTHERS</p>
             <li>
-                <!-- "timeline" -->
+                <!-- "sys logs = timeline" -->
                 <a href="index.html#" class="nav-link">
                     <i class="bi bi-body-text me-2"></i>
                     Sys Logs
@@ -139,9 +115,10 @@
                     Settings
                 </a>
             </li>
-
         </ul>
+
         <hr>
+
         <div class="dropdown">
             <a href="index.html#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -164,7 +141,7 @@
 
         <!-- #pageContent -->
         <div id="pageContent">
-            <!-- top nav -->
+            <!-- topnav -->
             <div id="topNavigation" class="px-3 py-2">
     <div class="container-fluid">
         <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
@@ -174,7 +151,7 @@
                 <i class="bi bi-list" id="sidebarToggleBtn"></i>
             </a>
 
-            <!-- form -->
+            <!-- search form -->
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <div class="input-group text-white">
                     <input type="text" class="form-control form-control-dark text-bg-dark text-white" value="search...">
@@ -222,6 +199,7 @@
         </div>
     </div>
 </div>
+            <!-- topnav ends -->
 
             <div class="container-fluid px-4">
                 <!-- section searchForMobile -->
@@ -237,6 +215,7 @@
         </form>
     </div>
 </div>
+                <!-- section searchForMobile ends -->
 
                 <!-- main_content -->
                 
@@ -662,6 +641,7 @@
                     <span class="mb-3 mb-md-0">© 2023 Ashish S. Maharjan</span>
                 </div>
             </footer>
+            <!-- footer ends -->
         </div>
         <!-- #pageContent ends -->
     </div>

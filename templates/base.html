@@ -13,28 +13,7 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-
-    <!-- Favicons -->
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
+    <!-- TODO: Favicons -->
 
     {% block header %}
     {% endblock header %}
@@ -48,12 +27,14 @@
 
         <!-- #pageContent -->
         <div id="pageContent">
-            <!-- top nav -->
+            <!-- topnav -->
             {% include 'top_navigation.html' %}
+            <!-- topnav ends -->
 
             <div class="container-fluid px-4">
                 <!-- section searchForMobile -->
                 {% include 'search_for_mobile.html' %}
+                <!-- section searchForMobile ends -->
 
                 <!-- main_content -->
                 {% block main_content %}
@@ -67,6 +48,7 @@
                     <span class="mb-3 mb-md-0">© 2023 Ashish S. Maharjan</span>
                 </div>
             </footer>
+            <!-- footer ends -->
         </div>
         <!-- #pageContent ends -->
     </div>
