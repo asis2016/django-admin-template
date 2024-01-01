@@ -197,6 +197,41 @@ hr {
 
 
 /**
+ *  ----- ----- ----- .modal ----- ----- -----
+ */
+
+#modalApplication {
+    .btn {
+        position: absolute;
+        right: -30px;
+        top: -30px;
+        color: #fff;
+    }
+
+    i {
+        font-size: 2.5rem;
+    }
+
+    .col-lg-2 {
+        padding: 2rem;
+    }
+
+    .box {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .box:hover {
+        color: var(--bs-teal);
+    }
+}
+
+.modal-backdrop {
+    background-color: #000;
+    opacity: 0.6 !important;
+}
+
+/**
  *  ----- ----- ----- .wrapper ----- ----- -----
  */
 .wrapper {
@@ -208,16 +243,16 @@ hr {
         background-color: $bg_primary_color;
         transition: margin 0.25s ease-out;
 
-        .nav-pills{
-            .active{
+        .nav-pills {
+            .active {
                 color: var(--bs-teal);
                 background-color: transparent !important;
             }
 
-            .nav-link{
+            .nav-link {
                 color: #fff;
 
-                &:hover{
+                &:hover {
                     color: var(--bs-teal);
                 }
             }
@@ -446,9 +481,10 @@ footer {
 /**
  * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
  */
- @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
+
     //----- others -----
     .lg-d-none {
         display: none;
     }
- }
+}

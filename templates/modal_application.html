@@ -1,0 +1,28 @@
+<!-- The Modal -->
+<div class="modal" id="modalApplication">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <!-- Modal body -->
+      <div class="modal-body bg-dark">
+        <button type="button" class="btn text-white" data-bs-dismiss="modal">
+          <i class="bi bi-x-circle"></i>
+        </button>
+        <div class="row">
+          {% for app in modal_applications %}
+          <div class="col-lg-2 text-center p-4">
+            <a href="#" class="box">
+              {{ app.icon|safe }}
+              <p class="py-2 mb-0">{{ app.title }}</p>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>

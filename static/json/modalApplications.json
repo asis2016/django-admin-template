@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Addon Domains",
+        "icon": "<i class='bi bi-cart-plus'></i>"
+    },
+    {
+        "title": "Authentication",
+        "icon": "<i class='bi bi-door-open'></i>"
+    },
+    {
+        "title": "Backup Wizard",
+        "icon": "<i class='bi bi-copy'></i>"
+    },
+    {
+        "title": "Calendar",
+        "icon": "<i class='bi bi-calendar3'></i>"
+    },
+    {
+        "title": "Contact",
+        "icon": "<i class='bi bi-person-lines-fill'></i>"
+    },
+    {
+        "title": "DBMS",
+        "icon": "<i class='bi bi-database'></i>"
+    },
+    {
+        "title": "Diagram",
+        "icon": "<i class='bi bi-diagram-3'></i>"
+    },
+    {
+        "title": "Directory Privacy",
+        "icon": "<i class='bi bi-folder'></i>"
+    },
+    {
+        "title": "Email Accounts",
+        "icon": "<i class='bi bi-envelope-at-fill'></i>"
+    },
+    {
+        "title": "Encryption",
+        "icon": "<i class='bi bi-key-fill'></i>"
+    },
+    {
+        "title": "File Manager",
+        "icon": "<i class='bi bi-file-earmark-binary'></i>"
+    },
+    {
+        "title": "Gallery",
+        "icon": "<i class='bi bi-images'></i>"
+    },
+    {
+        "title": "Help",
+        "icon": "<i class='bi bi-question-circle'></i>"
+    },
+    {
+        "title": "Mailing Lists",
+        "icon": "<i class='bi bi-mailbox'></i>"
+    },
+    {
+        "title": "Maps",
+        "icon": "<i class='bi bi-geo-fill'></i>"
+    },
+    {
+        "title": "Profile",
+        "icon": "<i class='bi bi-person-badge'></i>"
+    },
+    {
+        "title": "Redirects",
+        "icon": "<i class='bi bi-box-arrow-up-left'></i>"
+    },
+    {
+        "title": "Settings",
+        "icon": "<i class='bi bi-gear-wide-connected'></i>"
+    },
+    {
+        "title": "Subdomains",
+        "icon": "<i class='bi bi-globe'></i>"
+    },
+    {
+        "title": "System Monitor",
+        "icon": "<i class='bi bi-display'></i>"
+    },
+    {
+        "title": "System Settings",
+        "icon": "<i class='bi bi-bar-chart-line'></i>"
+    },
+    {
+        "title": "Management",
+        "icon": "<i class='bi bi-people'></i>"
+    },
+    {
+        "title": "WYSIWYG",
+        "icon": "<i class='bi bi-braces-asterisk'></i>"
+    },
+    {
+        "title": "Zone Editor",
+        "icon": "<i class='bi bi-book'></i>"
+    }
+]
