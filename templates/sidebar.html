@@ -1,53 +1,100 @@
 <nav id="mainSidebar">
     <div class="d-flex flex-column flex-shrink-0 p-3">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-4">SM LOGO</span>
+            
+            <!-- logo for LG screen -->
+            <span class="fs-4 logo-lg sm-d-none">Amaharjan</span>
+
+            <!-- logo for SM screen -->
+            <span class="fs-4 logo-sm lg-d-none">AMJ</span>
+            
+            <!-- for SM screen -->
             <span class="d-sm-none" id="sidebarUntoggleBtn">
-                <i class="bi bi-arrow-left-square-fill"></i>
+                <i class="bi bi-x-circle-fill"></i>
             </span>
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
                 <a href="#" class="nav-link active" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#home"></use>
-                    </svg>
-                    Home
+                    <i class="bi bi-house-door-fill me-2"></i>
+                    Home v.1
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
+                <a href="#" class="nav-link">
+                    <i class="bi bi-marker-tip me-2"></i>
+                    Widgets
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#table"></use>
-                    </svg>
-                    Orders
+                <a href="#" class="nav-link">
+                    <i class="bi bi-table me-2"></i>
+                    Tables
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#grid"></use>
-                    </svg>
-                    Products
+                <a href="#" class="nav-link">
+                    <i class="bi bi-ui-checks-grid me-2"></i>
+                    Forms
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                    Customers
+                <a href="#" class="nav-link">
+                    <i class="bi bi-graph-up me-2"></i>
+                    ChatJS
                 </a>
             </li>
+            
+            <!-- accounts -->
+            <p class="my-2 text-secondary text-small">ACCOUNTS</p>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-person-circle me-2"></i>
+                    My Profile
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-at me-2"></i>
+                    Registration
+                </a>
+            </li>
+
+            <!-- others -->
+            <p class="my-2 text-secondary text-small">OTHERS</p>
+            <li>
+                <!-- "timeline" -->
+                <a href="#" class="nav-link">
+                    <i class="bi bi-body-text me-2"></i>
+                    Sys Logs
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-person-raised-hand me-2"></i>
+                    FAQ
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-file-earmark-text me-2"></i>
+                    Documentation
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-gear me-2"></i>
+                    Settings
+                </a>
+            </li>
+
         </ul>
         <hr>
         <div class="dropdown">

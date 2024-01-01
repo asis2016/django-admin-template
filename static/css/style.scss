@@ -131,6 +131,13 @@ h4 {
 }
 
 /**
+ * ----- ----- ----- hr ----- ----- -----
+ */
+hr {
+    border-top: $border_primary_color solid !important;
+}
+
+/**
  * ----- ----- ----- .media ----- ----- -----
  */
 .media {
@@ -181,6 +188,9 @@ h4 {
 }
 
 
+/**
+ *  ----- ----- ----- .sidebarToggled ----- ----- -----
+ */
 .sidebarToggled #mainSidebar {
     margin-left: -20rem;
 }
@@ -197,6 +207,21 @@ h4 {
         // height: 100vh;
         background-color: $bg_primary_color;
         transition: margin 0.25s ease-out;
+
+        .nav-pills{
+            .active{
+                color: var(--bs-teal);
+                background-color: transparent !important;
+            }
+
+            .nav-link{
+                color: #fff;
+
+                &:hover{
+                    color: var(--bs-teal);
+                }
+            }
+        }
     }
 
 
@@ -295,12 +320,20 @@ footer {
 
 
 /**
+ * ----- ----- ----- others ----- ----- -----
+ */
+.text-small {
+    font-size: 80%;
+}
+
+
+/**
  * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
  */
 @media screen and (max-width:767px) {
 
     .sidebarToggled #mainSidebar {
-        display: block !important;
+        margin-left: -20rem;
     }
 
     /**
@@ -310,7 +343,6 @@ footer {
 
         // ----- .sidebar -----
         #mainSidebar {
-            min-width: 15rem;
             bottom: 0;
             float: none;
             left: 0;
@@ -322,6 +354,7 @@ footer {
             div:first-child {
                 a {
                     justify-content: space-between;
+                    margin-bottom: 0 !important;
                 }
             }
         }
@@ -373,6 +406,12 @@ footer {
         }
     }
 
+    // ----- others -----
+
+    .sm-d-none {
+        display: none;
+    }
+
     .sm-mb-1 {
         margin-bottom: 1rem;
     }
@@ -394,7 +433,6 @@ footer {
         margin-bottom: 1.5rem !important;
     }
 
-    // padding
     .sm-pt-0 {
         padding-top: 0 !important;
     }
@@ -403,8 +441,14 @@ footer {
     #sectionDashboardQuickInfo .col-xs-12:last-child {
         margin-bottom: 0;
     }
-
-    // .sidebarToggled #mainSidebar {
-    //     margin-left: -20rem;
-    // }
 }
+
+/**
+ * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
+ */
+ @media screen and (min-width:768px) {
+    //----- others -----
+    .lg-d-none {
+        display: none;
+    }
+ }

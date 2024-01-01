@@ -46,53 +46,100 @@
         <nav id="mainSidebar">
     <div class="d-flex flex-column flex-shrink-0 p-3">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-4">SM LOGO</span>
+            
+            <!-- logo for LG screen -->
+            <span class="fs-4 logo-lg sm-d-none">Amaharjan</span>
+
+            <!-- logo for SM screen -->
+            <span class="fs-4 logo-sm lg-d-none">AMJ</span>
+            
+            <!-- for SM screen -->
             <span class="d-sm-none" id="sidebarUntoggleBtn">
-                <i class="bi bi-arrow-left-square-fill"></i>
+                <i class="bi bi-x-circle-fill"></i>
             </span>
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
                 <a href="index.html#" class="nav-link active" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#home"></use>
-                    </svg>
-                    Home
+                    <i class="bi bi-house-door-fill me-2"></i>
+                    Home v.1
                 </a>
             </li>
             <li>
-                <a href="index.html#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-marker-tip me-2"></i>
+                    Widgets
                 </a>
             </li>
             <li>
-                <a href="index.html#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#table"></use>
-                    </svg>
-                    Orders
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-table me-2"></i>
+                    Tables
                 </a>
             </li>
             <li>
-                <a href="index.html#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#grid"></use>
-                    </svg>
-                    Products
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-ui-checks-grid me-2"></i>
+                    Forms
                 </a>
             </li>
             <li>
-                <a href="index.html#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                    Customers
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-graph-up me-2"></i>
+                    ChatJS
                 </a>
             </li>
+            
+            <!-- accounts -->
+            <p class="my-2 text-secondary text-small">ACCOUNTS</p>
+            <li>
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-person-circle me-2"></i>
+                    My Profile
+                </a>
+            </li>
+            <li>
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-at me-2"></i>
+                    Registration
+                </a>
+            </li>
+
+            <!-- others -->
+            <p class="my-2 text-secondary text-small">OTHERS</p>
+            <li>
+                <!-- "timeline" -->
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-body-text me-2"></i>
+                    Sys Logs
+                </a>
+            </li>
+            <li>
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-person-raised-hand me-2"></i>
+                    FAQ
+                </a>
+            </li>
+            <li>
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-file-earmark-text me-2"></i>
+                    Documentation
+                </a>
+            </li>
+            <li>
+                <a href="index.html#" class="nav-link">
+                    <i class="bi bi-gear me-2"></i>
+                    Settings
+                </a>
+            </li>
+
         </ul>
         <hr>
         <div class="dropdown">
@@ -163,6 +210,11 @@
                     <li>
                         <a href="index.html#" class="nav-link text-white">
                             <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#" class="nav-link text-white">
+                            <i class="bi bi-person-circle"></i>
                         </a>
                     </li>
                 </ul>
@@ -285,111 +337,6 @@
     
 </div>
 <!-- row for cardQuickInfo ends -->
-
-<!-- row for orderStatus -->
-<div class="row mt-4">
-    <div class="col-lg-12">
-        <div class="card">
-    <div class="card-body table-responsive">
-        <h4 class="card-title">Order Status</h4>
-        <div class="table-responsive">
-            <table class="table overflow-scroll table-hover">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Client</th>
-                        <th>Order no</th>
-                        <th>Product</th>
-                        <th>Selling price</th>
-                        <th>Payment mode</th>
-                        <th>Date</th>
-                        <th>Payment status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                    <tr>
-                        <td>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td class="d-flex align-items-center">
-                            <span class="nameInitial">JD</span>&nbsp;&nbsp;John Doe
-                        </td>
-                        <td>ORD123456 </td>
-                        <td>Example Product </td>
-                        <td>49.99 </td>
-                        <td>Credit Card </td>
-                        <td>2023-01-01 </td>
-                        <td><div class='badge badge-outline-success'>Approved</div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td class="d-flex align-items-center">
-                            <span class="nameInitial">JS</span>&nbsp;&nbsp;Jane Smith
-                        </td>
-                        <td>ORD789012 </td>
-                        <td>Another Product </td>
-                        <td>29.99 </td>
-                        <td>PayPal </td>
-                        <td>2023-02-15 </td>
-                        <td><div class='badge badge-outline-danger'>Failed</div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td class="d-flex align-items-center">
-                            <span class="nameInitial">BJ</span>&nbsp;&nbsp;Bob Johnson
-                        </td>
-                        <td>ORD345678 </td>
-                        <td>Special Item </td>
-                        <td>99.99 </td>
-                        <td>Debit Card </td>
-                        <td>2023-03-20 </td>
-                        <td><div class='badge badge-outline-success'>Approved</div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td class="d-flex align-items-center">
-                            <span class="nameInitial">AB</span>&nbsp;&nbsp;Alice Brown
-                        </td>
-                        <td>ORD901234 </td>
-                        <td>Unique Product </td>
-                        <td>59.99 </td>
-                        <td>Bank Transfer </td>
-                        <td>2023-04-10 </td>
-                        <td><div class='badge badge-outline-warning'>Pending</div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td class="d-flex align-items-center">
-                            <span class="nameInitial">CG</span>&nbsp;&nbsp;Charlie Green
-                        </td>
-                        <td>ORD567890 </td>
-                        <td>Special Edition </td>
-                        <td>79.99 </td>
-                        <td>Credit Card </td>
-                        <td>2023-05-25 </td>
-                        <td><div class='badge badge-outline-success'>Approved</div></td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-    </div>
-</div>
 
 <!-- row -->
 <div class="row mt-4">
@@ -598,6 +545,111 @@
 
         <!-- timeline -->
 
+    </div>
+</div>
+
+<!-- row for orderStatus -->
+<div class="row mt-4">
+    <div class="col-lg-12">
+        <div class="card">
+    <div class="card-body table-responsive">
+        <h4 class="card-title">Order Status</h4>
+        <div class="table-responsive">
+            <table class="table overflow-scroll table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Client</th>
+                        <th>Order no</th>
+                        <th>Product</th>
+                        <th>Selling price</th>
+                        <th>Payment mode</th>
+                        <th>Date</th>
+                        <th>Payment status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">JD</span>&nbsp;&nbsp;John Doe
+                        </td>
+                        <td>ORD123456 </td>
+                        <td>Example Product </td>
+                        <td>49.99 </td>
+                        <td>Credit Card </td>
+                        <td>2023-01-01 </td>
+                        <td><div class='badge badge-outline-success'>Approved</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">JS</span>&nbsp;&nbsp;Jane Smith
+                        </td>
+                        <td>ORD789012 </td>
+                        <td>Another Product </td>
+                        <td>29.99 </td>
+                        <td>PayPal </td>
+                        <td>2023-02-15 </td>
+                        <td><div class='badge badge-outline-danger'>Failed</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">BJ</span>&nbsp;&nbsp;Bob Johnson
+                        </td>
+                        <td>ORD345678 </td>
+                        <td>Special Item </td>
+                        <td>99.99 </td>
+                        <td>Debit Card </td>
+                        <td>2023-03-20 </td>
+                        <td><div class='badge badge-outline-success'>Approved</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">AB</span>&nbsp;&nbsp;Alice Brown
+                        </td>
+                        <td>ORD901234 </td>
+                        <td>Unique Product </td>
+                        <td>59.99 </td>
+                        <td>Bank Transfer </td>
+                        <td>2023-04-10 </td>
+                        <td><div class='badge badge-outline-warning'>Pending</div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td class="d-flex align-items-center">
+                            <span class="nameInitial">CG</span>&nbsp;&nbsp;Charlie Green
+                        </td>
+                        <td>ORD567890 </td>
+                        <td>Special Edition </td>
+                        <td>79.99 </td>
+                        <td>Credit Card </td>
+                        <td>2023-05-25 </td>
+                        <td><div class='badge badge-outline-success'>Approved</div></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 

@@ -2,32 +2,37 @@ $(document).ready(function () {
     /**
      * For sidebarToggled
      */
-    let sidebarToggleBtn = $('#sidebarToggleBtn');
+    
+    // Function to toggle sidebar
+    function toggleSidebar() {
+        $('body').toggleClass('sidebarToggled');
+        localStorage.setItem('amjSidebarToggle', $('body').hasClass('sidebarToggled'));
+    }
 
+    // Sidebar toggle button
+    let sidebarToggleBtn = $('#sidebarToggleBtn');
     if (sidebarToggleBtn.length) {
         if (localStorage.getItem('amjSidebarToggle') === 'true') {
-            $('body').toggleClass('sidebarToggled');
+            toggleSidebar();
         }
 
         sidebarToggleBtn.on('click', function (event) {
             event.preventDefault();
-            console.log('clicked')
-            $('body').toggleClass('sidebarToggled');
-
-            localStorage.setItem('amjSidebarToggle', $('body').hasClass('sidebarToggled'));
+            console.log('clicked');
+            toggleSidebar();
         });
     }
 
-    /**
-     * For sidebarToggled
-     */
+    // Untoggle sidebar button
     let sidebarUntoggleBtn = $('#sidebarUntoggleBtn');
-    sidebarUntoggleBtn.on('click', function (event) {
-        event.preventDefault();
-        console.log('clicked')
-        $('body').toggleClass('');
-        // $('.wrapper #mainSidebar').toggleClass('d-none');
-    });
+    if (sidebarUntoggleBtn.length) {
+        sidebarUntoggleBtn.on('click', function (event) {
+            event.preventDefault();
+            console.log('clicked');
+            toggleSidebar();
+            // $('.wrapper #mainSidebar').toggleClass('d-none');
+        });
+    }
 
 
 
