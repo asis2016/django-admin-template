@@ -84,7 +84,8 @@
                                     <a href="#" class="amj-a me-2">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
-                                    <a href="#" class="amj-a me-2">
+                                    <a href="#" class="amj-a me-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalDeleteConfirmation">
                                         <i class="bi bi-trash"></i>
                                     </a>
                                 </td>
@@ -116,4 +117,7 @@
 </div>
 <!-- table ends -->
 
+<!-- modal for delete -->
+{% include 'products/modal_delete_confirmation.html' %}
+<!-- modal for delete ends -->
 {% endblock main_content %}

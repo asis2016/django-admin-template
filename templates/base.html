@@ -1,6 +1,6 @@
 {% load static %}
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="utf-8">
@@ -21,14 +21,14 @@
     {% endblock header %}
 </head>
 
-<body>
-    <div class="wrapper d-flex">
+<body class="h-100">
+    <div class="wrapper d-flex h-100">
         <!-- #mainSidebar -->
         {% include 'sidebar.html' %}
         <!-- #mainSidebar ends -->
 
         <!-- #pageContent -->
-        <div id="pageContent">
+        <div id="pageContent" class="d-flex flex-column overflow-scroll">
             <!-- topnav -->
             {% include 'top_navigation.html' %}
             <!-- topnav ends -->
@@ -45,7 +45,9 @@
             </div>
 
             <!-- footer -->
-            <footer class="py-3 mt-4 container-fluid">
+            <!-- divider for footer -->
+            <div class="mt-4"></div>
+            <footer class="py-3 mt-auto container-fluid">
                 <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
                     <span class="mb-3 mb-md-0">© 2023 Ashish S. Maharjan</span>
                 </div>

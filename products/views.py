@@ -9,14 +9,10 @@ class ProductChartTemplateView(TemplateView):
 
 
 class ProductCreateFormTemplateView(TemplateView):
-    template_name = 'products/.html'
+    template_name = 'products/create.html'
 
 
 class ProductEditFormTemplateView(TemplateView):
-    template_name = 'products/.html'
-
-
-class ProductDeleteFormTemplateView(TemplateView):
     template_name = 'products/.html'
 
 

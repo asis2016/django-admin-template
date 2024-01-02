@@ -1,0 +1,30 @@
+
+<style>
+    /* TODO: refactor */
+    .modal-dark .modal-header{
+        border-bottom: 1px solid var(--amj-border-primary-color);
+    }
+
+    .modal-dark .modal-footer{
+        border-top: 1px solid var(--amj-border-primary-color);
+    }
+</style>
+<div class="modal modal-dark" tabindex="-1" id="modalDeleteConfirmation">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h6 class="modal-title">You are about to delete</h6>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger mb-0" role="alert">
+                    Are you sure you want to delete this?
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes, I am sure</button>
+            </div>
+        </div>
+    </div>
+</div>
