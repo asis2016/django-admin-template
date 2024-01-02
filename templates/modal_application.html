@@ -12,7 +12,7 @@
         <div class="row">
           {% for app in modal_applications %}
           <div class="col-lg-2 text-center p-4">
-            <a href="#" class="box">
+            <a href="{% url 'single_page' %}" class="box">
               {{ app.icon|safe }}
               <p class="py-2 mb-0">{{ app.title }}</p>
             </a>

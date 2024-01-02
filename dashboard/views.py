@@ -6,6 +6,10 @@ from django.contrib.staticfiles.finders import find
 import json
 
 
+class BlankPageTemplateView(TemplateView):
+    template_name= 'blank_page.html'
+
+
 class DashboardTemplateView(TemplateView):
     template_name = 'dashboard/dashboard.html'
 
@@ -29,3 +33,26 @@ class DashboardTemplateView(TemplateView):
         context['recently_added_products'] = self.get_json_data('dashboardRecentlyAddedProducts.json')
         context['vistors_browser'] = self.get_json_data('visitorsBrowser.json')
         return context
+
+
+class DocumentationTemplateView(TemplateView):
+    template_name= 'documentation.html'
+
+
+class FourZeroFourTemplateView(TemplateView):
+    template_name= '404.html'
+
+
+class LoginTemplateView(TemplateView):
+    template_name= 'login.html'
+
+
+class MailTemplateView(TemplateView):
+    template_name= 'mail.html'
+
+
+class RegisterTemplateView(TemplateView):
+    template_name= 'register.html'
+
+class SinglePageTemplateView(TemplateView):
+    template_name= 'single_page.html'

@@ -4,6 +4,22 @@ from django.contrib.staticfiles.finders import find
 import json
 
 
+class ProductChartTemplateView(TemplateView):
+    template_name = 'products/charts.html'
+
+
+class ProductCreateFormTemplateView(TemplateView):
+    template_name = 'products/.html'
+
+
+class ProductEditFormTemplateView(TemplateView):
+    template_name = 'products/.html'
+
+
+class ProductDeleteFormTemplateView(TemplateView):
+    template_name = 'products/.html'
+
+
 class ProductListTemplateView(TemplateView):
     template_name = 'products/list.html'
 
