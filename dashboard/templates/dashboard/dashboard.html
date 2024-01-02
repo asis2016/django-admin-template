@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block main_content %}
-<!-- page title -->
+<!-- pagetitle -->
 <div class="pageTitle pt-4 sm-pt-0">
     <h3>Dashboard</h3>
     <div class="btn-toolbar mb-2 mb-md-0">
@@ -15,56 +15,39 @@
         </button>
     </div>
 </div>
-<!-- page title ends -->
+<!-- pagetitle ends -->
 
 <!-- row for cardQuickInfo -->
 <div class="row mt-4" id="sectionDashboardQuickInfo">
-    {% for i in quick_info_data %}
-    <div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
-        <div class="card cardQuickInfo">
-            <div class="card-body">
-                <div>
-                    <h3>{{ i.title }}</h3>
-                    <p>{{ i.description }}</p>
-                </div>
-                <div>
-                    {{ i.icon|safe }}
-                </div>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#">
-                    Read more <i class="bi bi-arrow-right-circle"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
+    {% include 'dashboard/quick_info.html' %}
 </div>
 <!-- row for cardQuickInfo ends -->
 
-<!-- row -->
 <div class="row mt-4">
     <div class="col-lg-8">
         <!-- internal_projects -->
         {% include 'dashboard/internal_projects.html' %}
+        <!-- internal_projects ends -->
     </div>
 
     <div class="col-lg-4 col-sm-12 col-xs-12">
-        <!-- Visitors' Browser -->
+        <!-- visitors' browser -->
         {% include 'dashboard/visitor_browser.html' %}
+        <!-- visitors' browser ends -->
 
         <!-- recently added products -->
         {% include 'dashboard/recently_added_products.html' %}
+        <!-- recently added products ends -->
 
-        <!-- timeline -->
-
+        {# todo: timeline #}
     </div>
 </div>
 
-<!-- row for orderStatus -->
+<!-- row for order status -->
 <div class="row mt-4">
     <div class="col-lg-12">
         {% include 'dashboard/order_status.html' %}
     </div>
 </div>
+<!-- row for order status ends -->
 {% endblock main_content %}

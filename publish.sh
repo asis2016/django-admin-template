@@ -2,8 +2,8 @@
 
 
 #demo "web scrapping"
-wget -p -k -nH -P docs/ 127.0.0.1:8000
-
+#wget -p -k -nH -P docs/ 127.0.0.1:8000
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent -P docs/ -nH 127.0.0.1:8000/products
 
 #git
 echo "git commit message:"
