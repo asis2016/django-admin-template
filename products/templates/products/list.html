@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+<!-- breadcrumb -->
+<!-- todo -->
+<nav aria-label="breadcrumb" class="mt-4 sm-d-none d-none">
+    <ol class="breadcrumb breadcrumb-custom">
+        <li class="breadcrumb-item">
+            <a href="{% url 'dashboard' %}" class="fw-semibold text-decoration-none">
+                <i class="bi bi-house-door-fill me-2"></i>
+                Home
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#" class="fw-semibold text-decoration-none">
+                Products
+            </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            All products
+        </li>
+    </ol>
+</nav>
+<!-- breadcrumb ends -->
+
+<!-- page title -->
+<div class="pageTitle pt-4 sm-pt-0">
+    <h3>All Products</h3>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Generate report</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+        </button>
+    </div>
+</div>
+<!-- page title ends -->
+
+<!-- table -->
+<div class="row sm-pt-0">
+    <div class="col">
+        <div class="card">
+            <div class="card-body table-responsive">
+                <div class="table-responsive">
+                    <table class="table overflow-scroll table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>SKU</th>
+                                <th>Weight</th>
+                                <th>Modified date</th>
+                                <th>Supplier Id</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in products %}
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </td>
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="#" class="text-white amj-a">
+                                        {{ i.name }}
+                                    </a>
+                                </td>
+                                <td>{{ i.category }} </td>
+                                <td>${{ i.price }} </td>
+                                <td>{{ i.stock }} </td>
+                                <td>{{ i.weight }} </td>
+                                <td>{{ i.last_update_date }}</td>
+                                <td>{{ i.supplier_info.supplier_id }}</td>
+                                <td>
+                                    <a href="#" class="amj-a me-2">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                    <a href="#" class="amj-a me-2">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </a>
+                                    <a href="#" class="amj-a me-2">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- pagination -->
+                <style></style>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center my-3">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- pagination ends -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- table ends -->
+
+{% endblock main_content %}

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     #
     'dashboard.apps.DashboardConfig',
+    'products.apps.ProductsConfig',
 ]
 
 MIDDLEWARE = [

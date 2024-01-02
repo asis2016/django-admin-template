@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "P001",
+        "name": "Smartphone X",
+        "description": "High-performance smartphone with advanced features.",
+        "img": "img/smartphone_x.jpg",
+        "category": "Electronics",
+        "price": 599.99,
+        "stock": 100,
+        "weight": 0.35,
+        "purchased_date": "2023-05-10",
+        "last_update_date": "2023-12-20",
+        "supplier_info": {
+            "supplier_id": "S001",
+            "supplier_name": "TechMart Suppliers",
+            "contact": "supplier@techmart.priv"
+        }
+    },
+    {
+        "product_id": "P002",
+        "name": "Laptop Pro",
+        "description": "Powerful laptop for professional use.",
+        "img": "img/laptop_pro.jpg",
+        "category": "Computers",
+        "price": 1299.99,
+        "stock": 50,
+        "weight": 1.8,
+        "purchased_date": "2023-07-18",
+        "last_update_date": "2023-11-30",
+        "supplier_info": {
+            "supplier_id": "S002",
+            "supplier_name": "TechGadget Enterprises",
+            "contact": "info@techgadget.priv"
+        }
+    },
+    {
+        "product_id": "P003",
+        "name": "Fitness Tracker",
+        "description": "Track your fitness activities with this smart wearable.",
+        "img": "img/fitness_tracker.jpg",
+        "category": "Fitness",
+        "price": 49.99,
+        "stock": 200,
+        "weight": 0.1,
+        "purchased_date": "2023-09-05",
+        "last_update_date": "2023-12-15",
+        "supplier_info": {
+            "supplier_id": "S003",
+            "supplier_name": "HealthyTech Suppliers",
+            "contact": "support@healthytech.priv"
+        }
+    },
+    {
+        "product_id": "P004",
+        "name": "Wireless Headphones",
+        "description": "Immersive audio experience with wireless convenience.",
+        "img": "img/wireless_headphones.jpg",
+        "category": "Audio",
+        "price": 79.99,
+        "stock": 150,
+        "weight": 0.5,
+        "purchased_date": "2023-08-12",
+        "last_update_date": "2023-12-10",
+        "supplier_info": {
+            "supplier_id": "S004",
+            "supplier_name": "SoundScape Suppliers",
+            "contact": "info@soundscape.priv"
+        }
+    },
+    {
+        "product_id": "P005",
+        "name": "Digital Camera",
+        "description": "Capture moments with high-resolution digital imaging.",
+        "img": "img/digital_camera.jpg",
+        "category": "Photography",
+        "price": 399.99,
+        "stock": 80,
+        "weight": 1.2,
+        "purchased_date": "2023-06-25",
+        "last_update_date": "2023-11-25",
+        "supplier_info": {
+            "supplier_id": "S005",
+            "supplier_name": "PhotoTech Supplies",
+            "contact": "support@phototech.priv"
+        }
+    },
+    {
+        "product_id": "P006",
+        "name": "Smart Thermostat",
+        "description": "Efficiently control home temperature with smart technology.",
+        "img": "img/smart_thermostat.jpg",
+        "category": "Home Automation",
+        "price": 89.99,
+        "stock": 120,
+        "weight": 0.8,
+        "purchased_date": "2023-10-08",
+        "last_update_date": "2023-12-05",
+        "supplier_info": {
+            "supplier_id": "S006",
+            "supplier_name": "HomeTech Solutions",
+            "contact": "info@hometech.priv"
+        }
+    },
+    {
+        "product_id": "P007",
+        "name": "Gaming Mouse",
+        "description": "Precision and comfort for gaming enthusiasts.",
+        "img": "img/gaming_mouse.jpg",
+        "category": "Gaming Accessories",
+        "price": 49.99,
+        "stock": 100,
+        "weight": 0.2,
+        "purchased_date": "2023-11-15",
+        "last_update_date": "2023-12-18",
+        "supplier_info": {
+            "supplier_id": "S007",
+            "supplier_name": "GameGear Tech",
+            "contact": "support@gamegear.priv"
+        }
+    },
+    {
+        "product_id": "P008",
+        "name": "Portable External SSD",
+        "description": "Fast and reliable storage for on-the-go professionals.",
+        "img": "img/external_ssd.jpg",
+        "category": "Storage",
+        "price": 159.99,
+        "stock": 70,
+        "weight": 0.3,
+        "purchased_date": "2023-09-20",
+        "last_update_date": "2023-12-22",
+        "supplier_info": {
+            "supplier_id": "S008",
+            "supplier_name": "DataDrive Solutions",
+            "contact": "info@datadrive.priv"
+        }
+    },
+    {
+        "product_id": "P009",
+        "name": "Smart Light Bulbs",
+        "description": "Adjustable lighting with smart connectivity.",
+        "img": "img/smart_light_bulbs.jpg",
+        "category": "Smart Home",
+        "price": 29.99,
+        "stock": 180,
+        "weight": 0.15,
+        "purchased_date": "2023-07-30",
+        "last_update_date": "2023-12-12",
+        "supplier_info": {
+            "supplier_id": "S009",
+            "supplier_name": "BrightTech Innovations",
+            "contact": "support@brighttech.priv"
+        }
+    },
+    {
+        "product_id": "P010",
+        "name": "Wireless Charging Pad",
+        "description": "Convenient wireless charging for compatible devices.",
+        "img": "img/wireless_charging_pad.jpg",
+        "category": "Charging Accessories",
+        "price": 34.99,
+        "stock": 130,
+        "weight": 0.25,
+        "purchased_date": "2023-12-05",
+        "last_update_date": "2023-12-28",
+        "supplier_info": {
+            "supplier_id": "S010",
+            "supplier_name": "ChargeUp Technologies",
+            "contact": "info@chargeup.priv"
+        }
+    }
+]
