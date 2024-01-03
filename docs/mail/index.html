@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dark Django admin template</title>
 
-    <meta http-equiv="refresh" content="5"/>
+    <!-- <meta http-equiv="refresh" content="5"/> -->
 
     <!-- CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
@@ -275,7 +275,621 @@
 
                 <!-- main_content -->
                 
-WIP: mail box
+
+<!-- page title -->
+<div class="pageTitle pt-4 sm-pt-0">
+    <h3>My mail</h3>
+    <div class="btn-toolbar mb-2 mb-md-0 ">
+        <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Generate report</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            More options
+        </button>
+    </div>
+</div>
+<!-- page title ends -->
+
+<div class="row mt-4">
+
+    <div class="col-lg-3">
+        <!-- side -->
+        <div>
+            <div class="list-group" style="--bs-list-group-bg: var(--amj-bg-primary-color);">
+                <a href="index.html#" class="py-3 list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <span>
+                        <i class="bi bi-inbox-fill me-2"></i>Inbox
+                    </span>
+                    <span class="badge bg-primary rounded-pill">14</span>
+                </a>
+                <a href="index.html#" class="py-3 list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <span>
+                        <i class="bi bi-send-check-fill me-2"></i>Sent
+                    </span>
+                </a>
+                <a href="index.html#" class="py-3 list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <span>
+                        <i class="bi bi-file-earmark-text-fill me-2"></i>Drafts
+                    </span>
+                </a>
+                <a href="index.html#" class="py-3 list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <span>
+                        <i class="bi bi-funnel-fill me-2"></i>Spam
+                    </span>
+                </a>
+                <a href="index.html#" class="py-3 list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <span>
+                        <i class="bi bi-trash3-fill me-2"></i>Trash
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-9 col-sm-12 sm-my-4">
+        <div class="card">
+            <div class="card-body">
+                <!-- mail options -->
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <h4 class="mb-0">Inbox</h4>
+                    </div>
+                    <!-- mail pagination -->
+                    <div class="d-flex align-items-center justify-content-end">
+                        <small class="me-2">1-20/500</small>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination mb-0">
+                                <li class="page-item">
+                                    <a class="page-link" href="index.html#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="index.html#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- mail pagination ends -->
+                </div>
+                <div class="divider my-3"></div>
+                <!-- mail options ends -->
+                <div class="table-responsive">
+                    <table class="table overflow-scroll table-hover">
+                        <thead>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    John Doe
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Meeting Tomorrow
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    2 hours ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Alice Smith
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Project Update
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    1 day ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Bob Johnson
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Vacation Plans
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    3 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Eva Brown
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Important Announcement
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    5 hours ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Charlie Wilson
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Weekly Report
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    4 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Grace Miller
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Training Session
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    6 hours ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    David Davis
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Team Meeting
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    2 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Sophie White
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Product Launch
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    1 week ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Frank Green
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        New Opportunity
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    4 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Olivia Taylor
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Customer Feedback
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    3 weeks ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Ryan Anderson
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Project Kickoff
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    1 week ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Emma Carter
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Client Meeting
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    2 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Jack Robinson
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Budget Approval
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    4 hours ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Mia Davis
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Quarterly Review
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    3 weeks ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Nathan White
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Team Building Event
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    5 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Ava Johnson
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Product Demo
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    6 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Lucas Smith
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Performance Review
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    2 weeks ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Sophia Turner
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Training Workshop
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    1 day ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </td>
+                                <td>
+                                    Michael Brown
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        New Project Proposal
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                    <i class="bi bi-paperclip"></i>
+                                    
+                                </td>
+                                <td>
+                                    3 days ago
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="">
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Isabella Wilson
+                                </td>
+                                <td>
+                                    <a href="index.html#">
+                                        Company Announcement
+                                    </a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    4 weeks ago
+                                </td>
+                            </tr>
+                            
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer float-right">
+                <!-- mail pagination -->
+                <div class="d-flex align-items-center justify-content-end">
+                    <small class="me-2">1-20/500</small>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination mb-0">
+                            <li class="page-item">
+                                <a class="page-link" href="index.html#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="index.html#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- mail pagination ends -->
+            </div>
+        </div>
+
+    </div>
+</div>
 
                 <!-- main_content ends -->
             </div>

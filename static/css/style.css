@@ -428,6 +428,15 @@ footer {
     .wrapper #pageContent .container-fluid .pageTitle .btn-toolbar {
       justify-content: space-between; }
 
+  #sectionDashboardQuickInfo .col-xs-12:last-child {
+    margin-bottom: 0; } }
+/**
+ * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
+ */
+@media screen and (min-width: 768px) {
+  .lg-d-none {
+    display: none; } }
+@media screen and (max-width: 991px) {
   .sm-d-none {
     display: none; }
 
@@ -450,15 +459,6 @@ footer {
   .sm-pt-0 {
     padding-top: 0 !important; }
 
-  #sectionDashboardQuickInfo .col-xs-12:last-child {
-    margin-bottom: 0; } }
-/**
- * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
- */
-@media screen and (min-width: 768px) {
-  .lg-d-none {
-    display: none; } }
-@media screen and (max-width: 991px) {
   #modalApplication .modal-body-lg {
     display: none; }
   #modalApplication .modal-body-sm i {

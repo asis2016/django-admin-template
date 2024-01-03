@@ -1,0 +1,142 @@
+[
+    {
+        "isStar": true,
+        "name": "John Doe",
+        "subject": "Meeting Tomorrow",
+        "isAttachment": false,
+        "time": "2 hours ago"
+    },
+    {
+        "isStar": false,
+        "name": "Alice Smith",
+        "subject": "Project Update",
+        "isAttachment": true,
+        "time": "1 day ago"
+    },
+    {
+        "isStar": true,
+        "name": "Bob Johnson",
+        "subject": "Vacation Plans",
+        "isAttachment": false,
+        "time": "3 days ago"
+    },
+    {
+        "isStar": false,
+        "name": "Eva Brown",
+        "subject": "Important Announcement",
+        "isAttachment": true,
+        "time": "5 hours ago"
+    },
+    {
+        "isStar": true,
+        "name": "Charlie Wilson",
+        "subject": "Weekly Report",
+        "isAttachment": true,
+        "time": "4 days ago"
+    },
+    {
+        "isStar": false,
+        "name": "Grace Miller",
+        "subject": "Training Session",
+        "isAttachment": false,
+        "time": "6 hours ago"
+    },
+    {
+        "isStar": true,
+        "name": "David Davis",
+        "subject": "Team Meeting",
+        "isAttachment": true,
+        "time": "2 days ago"
+    },
+    {
+        "isStar": false,
+        "name": "Sophie White",
+        "subject": "Product Launch",
+        "isAttachment": false,
+        "time": "1 week ago"
+    },
+    {
+        "isStar": true,
+        "name": "Frank Green",
+        "subject": "New Opportunity",
+        "isAttachment": true,
+        "time": "4 days ago"
+    },
+    {
+        "isStar": false,
+        "name": "Olivia Taylor",
+        "subject": "Customer Feedback",
+        "isAttachment": false,
+        "time": "3 weeks ago"
+    },
+    {
+        "isStar": true,
+        "name": "Ryan Anderson",
+        "subject": "Project Kickoff",
+        "isAttachment": true,
+        "time": "1 week ago"
+    },
+    {
+        "isStar": false,
+        "name": "Emma Carter",
+        "subject": "Client Meeting",
+        "isAttachment": false,
+        "time": "2 days ago"
+    },
+    {
+        "isStar": true,
+        "name": "Jack Robinson",
+        "subject": "Budget Approval",
+        "isAttachment": true,
+        "time": "4 hours ago"
+    },
+    {
+        "isStar": false,
+        "name": "Mia Davis",
+        "subject": "Quarterly Review",
+        "isAttachment": false,
+        "time": "3 weeks ago"
+    },
+    {
+        "isStar": true,
+        "name": "Nathan White",
+        "subject": "Team Building Event",
+        "isAttachment": false,
+        "time": "5 days ago"
+    },
+    {
+        "isStar": false,
+        "name": "Ava Johnson",
+        "subject": "Product Demo",
+        "isAttachment": true,
+        "time": "6 days ago"
+    },
+    {
+        "isStar": true,
+        "name": "Lucas Smith",
+        "subject": "Performance Review",
+        "isAttachment": false,
+        "time": "2 weeks ago"
+    },
+    {
+        "isStar": false,
+        "name": "Sophia Turner",
+        "subject": "Training Workshop",
+        "isAttachment": true,
+        "time": "1 day ago"
+    },
+    {
+        "isStar": true,
+        "name": "Michael Brown",
+        "subject": "New Project Proposal",
+        "isAttachment": true,
+        "time": "3 days ago"
+    },
+    {
+        "isStar": false,
+        "name": "Isabella Wilson",
+        "subject": "Company Announcement",
+        "isAttachment": false,
+        "time": "4 weeks ago"
+    }
+]

@@ -639,8 +639,28 @@ footer {
         }
     }
 
-    // ----- others -----
 
+
+    // Dashboard page
+    #sectionDashboardQuickInfo .col-xs-12:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
+ */
+@media screen and (min-width:768px) {
+
+    //----- others -----
+    .lg-d-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    // ----- others -----
     .sm-d-none {
         display: none;
     }
@@ -669,25 +689,6 @@ footer {
     .sm-pt-0 {
         padding-top: 0 !important;
     }
-
-    // Dashboard page
-    #sectionDashboardQuickInfo .col-xs-12:last-child {
-        margin-bottom: 0;
-    }
-}
-
-/**
- * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
- */
-@media screen and (min-width:768px) {
-
-    //----- others -----
-    .lg-d-none {
-        display: none;
-    }
-}
-
-@media screen and (max-width:991px) {
 
     // #modalApplication
     #modalApplication {

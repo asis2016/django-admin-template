@@ -6,6 +6,15 @@ from django.contrib.staticfiles.finders import find
 import json
 
 
+def get_json_data(json_file):
+    '''Return json_data'''
+    json_file_path = find('json/' + json_file)
+
+    with open(json_file_path, 'r') as file:
+        data = json.load(file)
+    return data
+
+
 class BlankPageTemplateView(TemplateView):
     template_name= 'blank_page.html'
     extra_context = {'page_title': 'Blank Page'}
@@ -14,25 +23,14 @@ class BlankPageTemplateView(TemplateView):
 class DashboardTemplateView(TemplateView):
     template_name = 'dashboard/dashboard.html'
 
-    def get_json_data(self, json_file):
-        '''
-        Return json_data
-        '''
-        json_file_path = find('json/' + json_file)
-
-        with open(json_file_path, 'r') as file:
-            data = json.load(file)
-
-        return data
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['internal_projects'] = self.get_json_data('dashboardInternalProjects.json')
-        context['modal_applications'] = self.get_json_data('modalApplications.json')
-        context['order_status'] = self.get_json_data('dashboardOrderStatus.json')
-        context['quick_info_data'] = self.get_json_data('dashboardQuickInfo.json')
-        context['recently_added_products'] = self.get_json_data('dashboardRecentlyAddedProducts.json')
-        context['vistors_browser'] = self.get_json_data('visitorsBrowser.json')
+        context['internal_projects'] = get_json_data('dashboardInternalProjects.json')
+        context['modal_applications'] = get_json_data('modalApplications.json')
+        context['order_status'] = get_json_data('dashboardOrderStatus.json')
+        context['quick_info_data'] = get_json_data('dashboardQuickInfo.json')
+        context['recently_added_products'] = get_json_data('dashboardRecentlyAddedProducts.json')
+        context['vistors_browser'] = get_json_data('visitorsBrowser.json')
         return context
 
 
@@ -54,7 +52,17 @@ class LoginTemplateView(TemplateView):
 
 
 class MailTemplateView(TemplateView):
+    extra_context = {
+        'page_title': 'My mail'
+    }
+
     template_name= 'mail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['mails'] = get_json_data('mail.json')
+        return context
+
 
 
 class RegisterTemplateView(TemplateView):
