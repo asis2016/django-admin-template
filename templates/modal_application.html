@@ -2,13 +2,13 @@
 <div class="modal" id="modalApplication">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
-
       <!-- Modal Header -->
-      <!-- Modal body -->
-      <div class="modal-body bg-dark">
-        <button type="button" class="btn text-white" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle"></i>
-        </button>
+      <div class="modal-header">
+        <h5 class="modal-title">All Applications</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal body for lg screen -->
+      <div class="modal-body sm-d-none modal-body-lg">
         <div class="row">
           {% for app in modal_applications %}
           <div class="col-lg-2 text-center p-4">
@@ -19,7 +19,20 @@
           </div>
           {% endfor %}
         </div>
-
+      </div>
+      <!-- Modal body for lg screen ends -->
+      <!-- todo -->
+      <div class="modal-body modal-body-sm">
+        <ul class="list-group">
+          {% for app in modal_applications %}
+          <a href="#" class="text-decoration-none">
+            <li class="list-group-item">
+              {{ app.icon|safe }}
+              {{ app.title }}
+            </li>
+          </a>
+          {% endfor %}
+        </ul>
       </div>
 
 

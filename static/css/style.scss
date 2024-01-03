@@ -272,14 +272,6 @@ hr {
         color: #fff;
     }
 
-    i {
-        font-size: 2.5rem;
-    }
-
-    .col-lg-2 {
-        padding: 2rem;
-    }
-
     .box {
         color: #fff;
         text-decoration: none;
@@ -392,7 +384,7 @@ ul.timeline {
         background: var(--bs-teal);
         display: inline-block;
         position: absolute;
-        left: 29px;
+        left: 9px;
         width: 2px;
         height: 100%;
         z-index: 400;
@@ -401,7 +393,7 @@ ul.timeline {
 
 ul.timeline>li {
     margin: 20px 0;
-    padding-left: 20px;
+    padding-left: 0;
 
     &:before {
         content: ' ';
@@ -410,7 +402,7 @@ ul.timeline>li {
         position: absolute;
         border-radius: 50%;
         border: 3px solid var(--bs-teal);
-        left: 20px;
+        left: 0;
         width: 20px;
         height: 20px;
         z-index: 400;
@@ -687,5 +679,42 @@ footer {
     //----- others -----
     .lg-d-none {
         display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    // #modalApplication
+    #modalApplication {
+        .modal-body-lg {
+            display: none;
+        }
+
+        .modal-body-sm {
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    // #modalApplication
+    #modalApplication {
+        .modal-body-sm {
+            display: none;
+        }
+
+        .modal-body-lg {
+            i {
+                font-size: 2.5rem;
+            }
+        }
+
+        .col-lg-2 {
+            padding: 2rem;
+        }
+
     }
 }

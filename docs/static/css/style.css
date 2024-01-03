@@ -207,10 +207,6 @@ hr {
   right: -30px;
   top: -30px;
   color: #fff; }
-#modalApplication i {
-  font-size: 2.5rem; }
-#modalApplication .col-lg-2 {
-  padding: 2rem; }
 #modalApplication .box {
   color: #fff;
   text-decoration: none; }
@@ -294,14 +290,14 @@ ul.timeline {
     background: var(--bs-teal);
     display: inline-block;
     position: absolute;
-    left: 29px;
+    left: 9px;
     width: 2px;
     height: 100%;
     z-index: 400; }
 
 ul.timeline > li {
   margin: 20px 0;
-  padding-left: 20px; }
+  padding-left: 0; }
   ul.timeline > li:before {
     content: ' ';
     background: var(--bs-teal);
@@ -309,7 +305,7 @@ ul.timeline > li {
     position: absolute;
     border-radius: 50%;
     border: 3px solid var(--bs-teal);
-    left: 20px;
+    left: 0;
     width: 20px;
     height: 20px;
     z-index: 400; }
@@ -457,5 +453,17 @@ footer {
 @media screen and (min-width: 768px) {
   .lg-d-none {
     display: none; } }
+@media screen and (max-width: 991px) {
+  #modalApplication .modal-body-lg {
+    display: none; }
+  #modalApplication .modal-body-sm i {
+    margin-right: 10px; } }
+@media screen and (min-width: 992px) {
+  #modalApplication .modal-body-sm {
+    display: none; }
+  #modalApplication .modal-body-lg i {
+    font-size: 2.5rem; }
+  #modalApplication .col-lg-2 {
+    padding: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dark Django admin template</title>
 
+    <!-- <meta http-equiv="refresh" content="5"/> -->
+
     <!-- CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
@@ -614,13 +616,13 @@
 <div class="modal" id="modalApplication">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
-
       <!-- Modal Header -->
-      <!-- Modal body -->
-      <div class="modal-body bg-dark">
-        <button type="button" class="btn text-white" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle"></i>
-        </button>
+      <div class="modal-header">
+        <h5 class="modal-title">All Applications</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal body for lg screen -->
+      <div class="modal-body sm-d-none modal-body-lg">
         <div class="row">
           
           <div class="col-lg-2 text-center p-4">
@@ -792,7 +794,181 @@
           </div>
           
         </div>
-
+      </div>
+      <!-- Modal body for lg screen ends -->
+      <!-- todo -->
+      <div class="modal-body modal-body-sm">
+        <ul class="list-group">
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-cart-plus'></i>
+              Addon Domains
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-door-open'></i>
+              Authentication
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-copy'></i>
+              Backup Wizard
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-calendar3'></i>
+              Calendar
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-person-lines-fill'></i>
+              Contact
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-database'></i>
+              DBMS
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-diagram-3'></i>
+              Diagram
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-folder'></i>
+              Directory Privacy
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-envelope-at-fill'></i>
+              Email Accounts
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-key-fill'></i>
+              Encryption
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-file-earmark-binary'></i>
+              File Manager
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-images'></i>
+              Gallery
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-question-circle'></i>
+              Help
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-mailbox'></i>
+              Mailing Lists
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-geo-fill'></i>
+              Maps
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-person-badge'></i>
+              Profile
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-box-arrow-up-left'></i>
+              Redirects
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-gear-wide-connected'></i>
+              Settings
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-globe'></i>
+              Subdomains
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-display'></i>
+              System Monitor
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-bar-chart-line'></i>
+              System Settings
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-people'></i>
+              Management
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-braces-asterisk'></i>
+              WYSIWYG
+            </li>
+          </a>
+          
+          <a href="index.html#" class="text-decoration-none">
+            <li class="list-group-item">
+              <i class='bi bi-book'></i>
+              Zone Editor
+            </li>
+          </a>
+          
+        </ul>
       </div>
 
 
