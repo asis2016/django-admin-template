@@ -15,10 +15,12 @@
   --amj-text-primary-color: #fff;
   --amj-text-secondary-color: #a4a6ae; }
 
+html,
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: black;
-  color: #fff; }
+  height: 100%; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
 
 /*
  * ----- ----- ----- heading ----- ----- -----
@@ -39,7 +41,7 @@ h4 {
  */
 .table {
   color: #fff;
-  background-color: #1d1e24; }
+  background-color: var(--amj-bg-primary-color); }
   .table thead tr {
     border-style: solid;
     border-width: 0; }
@@ -56,7 +58,7 @@ h4 {
     padding: 0.9375rem;
     line-height: 1;
     white-space: nowrap;
-    background-color: #1d1e24;
+    background-color: var(--amj-bg-primary-color);
     color: #fff; }
 
 /**
@@ -86,7 +88,7 @@ h4 {
  */
 .card {
   color: #fff;
-  background-color: #1d1e24; }
+  background-color: var(--amj-bg-primary-color); }
   .card .card-header {
     border-bottom: 1px solid #2c2e33;
     text-transform: capitalize;
@@ -249,7 +251,7 @@ hr {
 
 .wrapper #mainSidebar {
   min-width: 20rem;
-  background-color: #1d1e24;
+  background-color: var(--amj-bg-primary-color);
   transition: margin 0.25s ease-out; }
   .wrapper #mainSidebar .nav-pills .active {
     color: var(--bs-teal);
@@ -260,9 +262,10 @@ hr {
       color: var(--bs-teal); }
 .wrapper #pageContent {
   min-width: 0;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll; }
   .wrapper #pageContent #topNavigation {
-    background-color: #1d1e24; }
+    background-color: var(--amj-bg-primary-color); }
     .wrapper #pageContent #topNavigation .container-fluid div:first-child {
       justify-content: center; }
     .wrapper #pageContent #topNavigation .container-fluid form .btn {
@@ -322,7 +325,7 @@ footer {
  */
 @media screen and (max-width: 767px) {
   .sidebarToggled #mainSidebar {
-    margin-left: -20rem; }
+    margin-left: 0 !important; }
 
   /**
    *  ----- ----- ----- .wrapper ----- ----- -----
@@ -334,7 +337,10 @@ footer {
     z-index: 999;
     position: fixed;
     top: 0;
-    border-right: 1px solid #2c2e33; }
+    border-right: 1px solid #2c2e33;
+    overflow-y: scroll;
+    min-width: 250px;
+    margin-left: -20rem; }
     .wrapper #mainSidebar div:first-child a {
       justify-content: space-between;
       margin-bottom: 0 !important; }

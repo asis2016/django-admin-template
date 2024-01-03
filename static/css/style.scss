@@ -21,18 +21,21 @@
     --amj-text-secondary-color: #a4a6ae;
 }
 
-// $bg_primary_color: #191c24;
-$bg_primary_color: #1d1e24;
+// --amj-bg-primary-color: #191c24;
 $border_primary_color: #2c2e33;
 
 //
 $text_primary_color: #fff;
 $text_secondary: #a4a6ae;
 
+
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: black;
-    color: $text_primary_color;
 }
 
 /*
@@ -56,7 +59,7 @@ h4 {
  */
 .table {
     color: $text_primary_color;
-    background-color: $bg_primary_color;
+    background-color: var(--amj-bg-primary-color);
 
     thead {
         tr {
@@ -84,7 +87,7 @@ h4 {
         padding: 0.9375rem;
         line-height: 1;
         white-space: nowrap;
-        background-color: $bg_primary_color;
+        background-color: var(--amj-bg-primary-color);
         color: $text_primary_color;
     }
 }
@@ -120,7 +123,7 @@ h4 {
  */
 .card {
     color: $text_primary_color;
-    background-color: $bg_primary_color;
+    background-color: var(--amj-bg-primary-color);
 
     .card-header {
         border-bottom: 1px solid $border_primary_color;
@@ -348,7 +351,7 @@ hr {
     #mainSidebar {
         min-width: 20rem;
         // height: 100vh;
-        background-color: $bg_primary_color;
+        background-color: var(--amj-bg-primary-color);
         transition: margin 0.25s ease-out;
 
         .nav-pills {
@@ -372,10 +375,11 @@ hr {
     #pageContent {
         min-width: 0;
         width: 100%;
+        overflow-y: scroll;
 
         // ----- #topNavigation -----
         #topNavigation {
-            background-color: $bg_primary_color;
+            background-color: var(--amj-bg-primary-color);
 
             .container-fluid {
                 div:first-child {
@@ -487,7 +491,7 @@ footer {
 @media screen and (max-width:767px) {
 
     .sidebarToggled #mainSidebar {
-        margin-left: -20rem;
+        margin-left: 0 !important;
     }
 
     /**
@@ -504,6 +508,9 @@ footer {
             position: fixed;
             top: 0;
             border-right: 1px solid $border_primary_color;
+            overflow-y: scroll;
+            min-width: 250px;
+            margin-left: -20rem;
 
             div:first-child {
                 a {

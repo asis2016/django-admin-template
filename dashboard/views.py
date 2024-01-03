@@ -8,6 +8,7 @@ import json
 
 class BlankPageTemplateView(TemplateView):
     template_name= 'blank_page.html'
+    extra_context = {'page_title': 'Blank Page'}
 
 
 class DashboardTemplateView(TemplateView):
@@ -36,10 +37,15 @@ class DashboardTemplateView(TemplateView):
 
 
 class DocumentationTemplateView(TemplateView):
+    extra_context = {'page_title': 'Documentation'}
     template_name= 'documentation.html'
 
 
 class FourZeroFourTemplateView(TemplateView):
+    extra_context = {
+        'page_title': '404',
+        'display': 'd-none'
+    }
     template_name= '404.html'
 
 
