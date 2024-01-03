@@ -25,12 +25,12 @@
       <div class="modal-body modal-body-sm">
         <ul class="list-group">
           {% for app in modal_applications %}
-          <a href="#" class="text-decoration-none">
-            <li class="list-group-item">
+          <li class="list-group-item">
+            <a href="#" class="amj-a">
               {{ app.icon|safe }}
               {{ app.title }}
-            </li>
-          </a>
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
