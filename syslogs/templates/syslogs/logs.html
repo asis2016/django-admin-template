@@ -1,5 +1,28 @@
 {% extends 'base.html' %}
 
 {% block main_content %}
-WIP: sys logs
+{# page_title #}
+{% include 'page_title.html' %}
+
+<div class="row">
+    <div class="col-md-6">
+        <ul class="timeline">
+            {% for log in syslogs %}
+            <li>
+                <p class="mb-0 d-flex justify-content-between w-100">
+                    <span>
+                        <i class="bi bi-calendar-check me-1"></i>{{ log.datestamp }}
+                    </span>
+                    <span>
+                        <i class="bi bi-bookmark-dash-fill me-1"></i>{{ log.severity }}
+                    </span>
+                </p>
+                <p>
+                    <small>{{ log.message }}</small>
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 {% endblock main_content %}

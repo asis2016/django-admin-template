@@ -1,0 +1,62 @@
+[
+    {
+        "datestamp": "2024-01-03 16:01:55",
+        "severity": "INFO",
+        "message": "Dummy message 42"
+    },
+    {
+        "datestamp": "2024-01-03 16:01:58",
+        "severity": "ERROR",
+        "message": "Dummy message 7"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:03",
+        "severity": "WARNING",
+        "message": "Dummy message 91"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:08",
+        "severity": "INFO",
+        "message": "Dummy message 13"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:12",
+        "severity": "ERROR",
+        "message": "Dummy message 68"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:17",
+        "severity": "WARNING",
+        "message": "Dummy message 54"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:22",
+        "severity": "INFO",
+        "message": "Dummy message 27"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:28",
+        "severity": "ERROR",
+        "message": "Dummy message 89"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:34",
+        "severity": "WARNING",
+        "message": "Dummy message 19"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:39",
+        "severity": "INFO",
+        "message": "Dummy message 73"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:39",
+        "severity": "INFO",
+        "message": "Dummy message 101"
+    },
+    {
+        "datestamp": "2024-01-03 16:02:39",
+        "severity": "INFO",
+        "message": "Dummy message 202"
+    }
+]
