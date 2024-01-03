@@ -15,12 +15,6 @@
     <link href="../../static/css/style.css" rel="stylesheet">
 
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         .card {
             max-width: 500px;
             padding: 1rem;
@@ -28,7 +22,7 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex justify-content-center align-items-center m-4">
     <div class="card rounded-4 shadow">
         <div class="card-header bg-none">
             <h3>Sign up for free</h3>
@@ -41,7 +35,8 @@
                     <label for="email">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control rounded-3" id="pass" placeholder="Password" value="pass">
+                    <input type="password" class="form-control rounded-3" id="pass" placeholder="Password"
+                        value="********************">
                     <label for="pass">Password</label>
                 </div>
                 <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary-amj" href="../../index.html">Sign up</a>
@@ -49,7 +44,7 @@
 
                 <hr class="my-4">
 
-                <h4>Or use a third-party</h4>
+                <h6>Or use a third-party</h6>
                 <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
                     <i class="bi bi-twitter-x me-2"></i>
                     Sign up with X
