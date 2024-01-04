@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Premium Wireless Headphones",
+        "shorturl": "www.yourcompany.priv/headphones",
+        "description": "Immerse yourself in high-quality audio with our premium wireless headphones.",
+        "tags": [
+            "audio",
+            "headphones",
+            "wireless"
+        ]
+    },
+    {
+        "title": "Smart Home Security System",
+        "shorturl": "www.yourcompany.priv/security-system",
+        "description": "Protect your home with our advanced smart security system, ensuring peace of mind.",
+        "tags": [
+            "home",
+            "security",
+            "smart"
+        ]
+    },
+    {
+        "title": "Fashionable Smartwatch",
+        "shorturl": "www.yourcompany.priv/smartwatch",
+        "description": "Stay connected and stylish with our fashionable smartwatch, packed with features for modern living.",
+        "tags": [
+            "fashion",
+            "wearables",
+            "technology"
+        ]
+    },
+    {
+        "title": "Compact Espresso Machine",
+        "shorturl": "www.yourcompany.priv/espresso-machine",
+        "description": "Savor the rich taste of freshly brewed coffee with our compact espresso machine, designed for coffee enthusiasts.",
+        "tags": [
+            "coffee",
+            "appliances",
+            "compact"
+        ]
+    },
+    {
+        "title": "Outdoor Adventure Backpack",
+        "shorturl": "www.yourcompany.priv/adventure-backpack",
+        "description": "Embark on thrilling adventures with our durable and feature-packed outdoor adventure backpack.",
+        "tags": [
+            "outdoors",
+            "adventure",
+            "backpack"
+        ]
+    },
+    {
+        "title": "Professional Camera Drone",
+        "shorturl": "www.yourcompany.priv/camera-drone",
+        "description": "Capture stunning aerial shots with our professional camera drone, perfect for photography and videography enthusiasts.",
+        "tags": [
+            "photography",
+            "drones",
+            "technology"
+        ]
+    },
+    {
+        "title": "Organic Skincare Set",
+        "shorturl": "www.yourcompany.priv/skincare-set",
+        "description": "Nourish your skin with our organic skincare set, crafted with natural ingredients for a radiant complexion.",
+        "tags": [
+            "beauty",
+            "skincare",
+            "organic"
+        ]
+    },
+    {
+        "title": "Home Fitness Equipment",
+        "shorturl": "www.yourcompany.priv/fitness-equipment",
+        "description": "Achieve your fitness goals at home with our versatile and high-quality home fitness equipment.",
+        "tags": [
+            "fitness",
+            "home",
+            "exercise"
+        ]
+    }
+]

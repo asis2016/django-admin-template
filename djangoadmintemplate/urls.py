@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from dashboard.views import (
     BlankPageTemplateView, DashboardTemplateView, DocumentationTemplateView, FourZeroFourTemplateView, 
-    LoginTemplateView, MailTemplateView, RegisterTemplateView, SinglePageTemplateView
+    LoginTemplateView, MailTemplateView, RegisterTemplateView, SinglePageTemplateView, SearchResultTemplateView
 )
 from faq.views import FaqTemplateView
 from products.views import (
@@ -33,6 +33,7 @@ urlpatterns = [
     path('documentation/', DocumentationTemplateView.as_view(), name='documentation'),
     path('mail/', MailTemplateView.as_view(), name='mail'),
     path('single-page/', SinglePageTemplateView.as_view(), name='single_page'),
+    path('search-results/', SearchResultTemplateView.as_view(), name='search_result_page'),
 
     #syslogs
     path('system-logs/', SysLogTemplateView.as_view(), name='syslogs'),

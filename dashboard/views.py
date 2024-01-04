@@ -63,3 +63,17 @@ class SinglePageTemplateView(TemplateView):
         'display': 'd-none'
     }
     template_name= 'single_page.html'
+
+
+class SearchResultTemplateView(TemplateView):
+    extra_context = {
+        'page_title': 'Search results',
+        'display': 'd-none'
+    }
+
+    template_name= 'search-results.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['results'] = get_json_data('searchResults.json')
+        return context

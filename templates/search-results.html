@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Search results
+{% endblock title %}
+
+{% block main_content %}
+
+{% include 'components/page-title.html' %}
+
+<div class="row mt-4">
+    <div class="col-lg-6">
+
+        {% for result in results %}
+        <div class="d-flex pt-3">
+            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
+            <div class="pb-3 mb-0 small lh-sm">
+                <p class="mb-0">
+                    <strong class="d-block">{{ result.title }}</strong>
+                </p>
+                <p class="my-1">
+                    <a href="#" class="amj-a">
+                        {{ result.shorturl }}
+                    </a>
+                </p>
+                <p class="my-2">
+                    {{ result.description }}
+                </p>
+                <!-- tags -->
+                {% for tag in result.tags %}
+                <span class="badge rounded-pill text-bg-info fw-medium">{{ tag }}</span>
+                {% endfor %}
+                <!-- tags ends -->
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock main_content %}
