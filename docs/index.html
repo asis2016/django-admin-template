@@ -28,13 +28,19 @@ Dashboard
 <body>
     <div class="wrapper d-flex h-100">
         <!-- #mainSidebar -->
-        <nav id="mainSidebar" class="h-100">
+        
+<nav id="mainSidebar" class="h-100">
     <div class="d-flex flex-column flex-shrink-0 p-3">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <!-- logo for LG screen -->
-            <span class="fs-4 logo-lg sm-d-none">Amaharjan</span>
+            <span class="fs-4 logo-lg only-d-lg">
+                <img src="static/img/logo-100x25.png" alt="">
+            </span>
+            
             <!-- logo for SM screen -->
-            <span class="fs-4 logo-sm lg-d-none">AMJ</span>
+            <span class="fs-4 logo-sm only-d-sm">
+                <img src="static/img/logo-40x25.png" alt="">
+            </span>
             <!-- for SM screen - close -->
             <span class="d-sm-none" id="sidebarUntoggleBtn">
                 <i class="bi bi-x-circle-fill"></i>
@@ -165,7 +171,7 @@ Dashboard
                 <!-- nav -->
                 <ul class="nav">
                     <!-- Home icon for sm screen -->
-                    <li class="lg-d-none">
+                    <li class="only-d-sm">
                         <a href="index.html" class="nav-link text-white">
                             <i class="bi bi-house-door-fill"></i>
                         </a>
@@ -261,7 +267,7 @@ Dashboard
 
             <div class="container-fluid px-4">
                 <!-- section searchForMobile -->
-                <div class="row my-4 sm-my-4 sm-mt-0" id="searchForMobile">
+                <div class="row my-4 sm-my-3 sm-mt-0" id="searchForMobile">
     <div class="col">
         <form>
             <div class="input-group">
@@ -295,9 +301,9 @@ Dashboard
 <!-- page title ends -->
 
 <!-- row for cardQuickInfo -->
-<div class="row mt-4" id="sectionDashboardQuickInfo">
+<div class="row mt-4 sm-mt-3" id="sectionDashboardQuickInfo">
     
-<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
+<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-3">
     <div class="card cardQuickInfo">
         <div class="card-body">
             <div>
@@ -314,7 +320,7 @@ Dashboard
     </div>
 </div>
 
-<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
+<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-3">
     <div class="card cardQuickInfo">
         <div class="card-body">
             <div>
@@ -331,7 +337,7 @@ Dashboard
     </div>
 </div>
 
-<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
+<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-3">
     <div class="card cardQuickInfo">
         <div class="card-body">
             <div>
@@ -348,7 +354,7 @@ Dashboard
     </div>
 </div>
 
-<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-1">
+<div class="col-lg-3 col-sm-12 col-xs-12 sm-mb-3">
     <div class="card cardQuickInfo">
         <div class="card-body">
             <div>
@@ -368,21 +374,21 @@ Dashboard
 </div>
 <!-- row for cardQuickInfo ends -->
 
-<div class="row mt-4">
+<div class="row mt-4 sm-mt-0">
     <div class="col-lg-8">
         <!-- purhcase_sales_history -->
-        <div class="card">
+        <div class="card sm-mb-3">
     <div class="card-body">
-        <h4 class="card-title">Purchase & Sales History</h4>
+        <h6 class="card-title">Purchase & Sales History</h6>
         <canvas id="lineChartExampleOne" style="height: 350px; width: 100%;"></canvas>
     </div>
 </div>
         <!-- purhcase_sales_history ends -->
 
         <!-- internal_projects -->
-        <div class="card mt-4 sm-mt-2">
+        <div class="card mt-4 sm-mt-0">
     <div class="card-header py-3">
-        <h4 class="m-0">Internal Projects</h4>
+        <h6 class="m-0">Internal Projects</h6>
     </div>
     <div class="card-body">
         
@@ -418,9 +424,9 @@ Dashboard
 
     <div class="col-lg-4 col-sm-12 col-xs-12">
         <!-- visitors' browser -->
-        <div class="card sm-mt-2">
+        <div class="card sm-mt-3">
     <div class="card-body">
-        <h4 class="card-title">Visitors' Browser</h4>
+        <h6 class="card-title">Visitors' Browser</h6>
         <div class="d-flex justify-content-center">
             <canvas id="visitorBrowser" style="height: 300; width: 300;"></canvas>
         </div>
@@ -481,9 +487,9 @@ Dashboard
         <!-- visitors' browser ends -->
 
         <!-- recently added products -->
-        <div class="card mt-4">
+        <div class="card mt-4 sm-mt-3">
     <div class="card-body">
-        <h4 class="card-title">Recently added products</h4>
+        <h6 class="card-title">Recently added products</h6>
         
         <div class="media">
             <img src="https://placehold.co/50x50.png" height="50px" width="50px" alt="">
@@ -554,17 +560,15 @@ Dashboard
     </div>
 </div>
         <!-- recently added products ends -->
-
-        
     </div>
 </div>
 
 <!-- row for order status -->
-<div class="row mt-4">
+<div class="row mt-4 sm-mt-3">
     <div class="col-lg-12">
         <div class="card">
     <div class="card-body table-responsive">
-        <h4 class="card-title">Order Status</h4>
+        <h6 class="card-title">Order Status</h6>
         <div class="table-responsive">
             <table class="table overflow-scroll table-hover">
                 <thead>
@@ -670,7 +674,8 @@ Dashboard
 
             <!-- footer -->
             <!-- divider for footer -->
-            <div class="mt-4"></div>
+            <div class="mt-4 sm-mt-3"></div>
+            <!-- divider for footer ends -->
             <footer class="py-3 mt-auto container-fluid">
                 <div class="row">
                     <div class="col text-small">
@@ -678,13 +683,13 @@ Dashboard
                     </div>
                     <div class="col text-small text-end">
                         <span class="mb-3 mb-md-0">
-                            Designed by <a href="https://github.com/asis2016/bootstrap-5-admin-template">adminAM - Bootstrap 5 Admin Template</a>
+                            Designed by <a href="https://github.com/asis2016/bootstrap-5-admin-template">
+                                <span class="only-d-lg">adminAM - Bootstrap 5 Admin Template</span>
+                                <span class="only-d-sm">adminAM</span>
+                            </a>
                         </span>
                     </div>
                 </div>
-                <!-- <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
-                    
-                </div> -->
             </footer>
             <!-- footer ends -->
         </div>
@@ -698,7 +703,7 @@ Dashboard
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
-        <h5 class="modal-title">All Applications</h5>
+        <h6 class="modal-title">All Applications</h6>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <!-- Modal body for lg screen -->

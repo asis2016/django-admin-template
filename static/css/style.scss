@@ -442,7 +442,6 @@ ul.timeline>li {
         }
     }
 
-
     // ----- #pageContent -----
     #pageContent {
         min-width: 0;
@@ -655,43 +654,63 @@ footer {
     }
 }
 
+// margin
+
+
 /**
  * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
  */
-@media screen and (min-width:768px) {
+@media screen and (max-width:991px) {
 
-    //----- others -----
-    .lg-d-none {
+    // ----- others -----
+    .only-d-lg {
         display: none;
     }
-}
-
-@media screen and (max-width:991px) {
 
     // ----- chartjs -----
     #lineChartExampleOne {
         height: 200px !important;
     }
 
-    // ----- others -----
-    .sm-d-none {
-        display: none;
+    // ----- margin-bottom -----
+    .sm-mb-0 {
+        margin-bottom: 0 !important;
     }
 
     .sm-mb-1 {
-        margin-bottom: 1rem;
+        margin-bottom: .25rem !important;
     }
+
+    .sm-mb-2 {
+        margin-bottom: .5rem !important;
+    }
+
+    .sm-mb-3 {
+        margin-bottom: 1rem !important;
+    }
+
+    // ----- margin-top -----
 
     .sm-mt-0 {
         margin-top: 0 !important;
     }
 
     .sm-mt-1 {
-        margin-top: 1rem;
+        margin-top: .25rem !important;
     }
 
     .sm-mt-2 {
-        margin-top: 2rem;
+        margin-top: .5rem !important;
+    }
+
+    .sm-mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    // ----
+    .sm-my-3 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
 
     .sm-my-4 {
@@ -718,6 +737,11 @@ footer {
 }
 
 @media screen and (min-width:992px) {
+
+    // ----- others -----
+    .only-d-sm {
+        display: none;
+    }
 
     // #modalApplication
     #modalApplication {

@@ -10,12 +10,12 @@ Dashboard
 {% include 'components/page-title.html' %}
 
 <!-- row for cardQuickInfo -->
-<div class="row mt-4" id="sectionDashboardQuickInfo">
+<div class="row mt-4 sm-mt-3" id="sectionDashboardQuickInfo">
     {% include 'dashboard/quick_info.html' %}
 </div>
 <!-- row for cardQuickInfo ends -->
 
-<div class="row mt-4">
+<div class="row mt-4 sm-mt-0">
     <div class="col-lg-8">
         <!-- purhcase_sales_history -->
         {% include 'dashboard/purchase_sales_history.html' %}
@@ -34,13 +34,11 @@ Dashboard
         <!-- recently added products -->
         {% include 'dashboard/recently_added_products.html' %}
         <!-- recently added products ends -->
-
-        {# todo: timeline #}
     </div>
 </div>
 
 <!-- row for order status -->
-<div class="row mt-4">
+<div class="row mt-4 sm-mt-3">
     <div class="col-lg-12">
         {% include 'dashboard/order_status.html' %}
     </div>

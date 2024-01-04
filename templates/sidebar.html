@@ -1,10 +1,16 @@
+{% load static %}
 <nav id="mainSidebar" class="h-100">
     <div class="d-flex flex-column flex-shrink-0 p-3">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <!-- logo for LG screen -->
-            <span class="fs-4 logo-lg sm-d-none">Amaharjan</span>
+            <span class="fs-4 logo-lg only-d-lg">
+                <img src="{% static 'img/logo-100x25.png' %}" alt="">
+            </span>
+            
             <!-- logo for SM screen -->
-            <span class="fs-4 logo-sm lg-d-none">AMJ</span>
+            <span class="fs-4 logo-sm only-d-sm">
+                <img src="{% static 'img/logo-40x25.png' %}" alt="">
+            </span>
             <!-- for SM screen - close -->
             <span class="d-sm-none" id="sidebarUntoggleBtn">
                 <i class="bi bi-x-circle-fill"></i>

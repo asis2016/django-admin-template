@@ -8,7 +8,7 @@ Mail
 
 {% include 'components/page-title.html' %}
 
-<div class="row mt-4">
+<div class="row mt-4 sm-mt-3">
 
     <div class="col-lg-3">
         <!-- side -->
@@ -43,7 +43,7 @@ Mail
             </div>
         </div>
     </div>
-    <div class="col-lg-9 col-sm-12 sm-my-4">
+    <div class="col-lg-9 col-sm-12 sm-mt-3">
         <div class="card">
             <div class="card-body">
                 <!-- mail options -->
@@ -94,12 +94,12 @@ Mail
                                         {{ mail.subject }}
                                     </a>
                                 </td>
-                                <td>
+                                <td class="only-d-lg">
                                     {% if mail.isAttachment %}
                                     <i class="bi bi-paperclip"></i>
                                     {% endif %}
                                 </td>
-                                <td>
+                                <td class="only-d-lg">
                                     {{ mail.time }}
                                 </td>
                             </tr>
