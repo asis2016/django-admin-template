@@ -204,7 +204,7 @@ $(function () {
             ]
         },
         onRegionTipShow: function (e, el, code) {
-            el.html(el.html() + '-' + gdpData[code] + '%');
+            el.html(el.html() + ': ' + gdpData[code] + '%');
         }
     });
 });
