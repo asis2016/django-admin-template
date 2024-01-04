@@ -24,6 +24,10 @@ Dashboard
         <!-- internal_projects -->
         {% include 'dashboard/internal_projects.html' %}
         <!-- internal_projects ends -->
+
+        <!-- user_demographics -->
+        {% include 'dashboard/user_demographics.html' %}
+        <!-- user_demographics ends -->
     </div>
 
     <div class="col-lg-4 col-sm-12 col-xs-12">
@@ -48,4 +52,5 @@ Dashboard
 
 {% block footer %}
 <script src="{% static 'js/dashboard.js' %}"></script>
+<script src="{% static 'js/user-demographics.js' %}"></script>
 {% endblock footer %}
