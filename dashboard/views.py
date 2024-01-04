@@ -1,18 +1,8 @@
 from django.views.generic import TemplateView
-from django.templatetags.static import static
 from django.contrib.staticfiles.finders import find
-
+from .context_processors import get_json_data
 
 import json
-
-
-def get_json_data(json_file):
-    '''Return json_data'''
-    json_file_path = find('json/' + json_file)
-
-    with open(json_file_path, 'r') as file:
-        data = json.load(file)
-    return data
 
 
 class BlankPageTemplateView(TemplateView):
@@ -26,7 +16,6 @@ class DashboardTemplateView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['internal_projects'] = get_json_data('dashboardInternalProjects.json')
-        context['modal_applications'] = get_json_data('modalApplications.json')
         context['order_status'] = get_json_data('dashboardOrderStatus.json')
         context['quick_info_data'] = get_json_data('dashboardQuickInfo.json')
         context['recently_added_products'] = get_json_data('dashboardRecentlyAddedProducts.json')
@@ -64,9 +53,13 @@ class MailTemplateView(TemplateView):
         return context
 
 
-
 class RegisterTemplateView(TemplateView):
     template_name= 'register.html'
 
+
 class SinglePageTemplateView(TemplateView):
+    extra_context = {
+        'page_title': 'Single Page',
+        'display': 'd-none'
+    }
     template_name= 'single_page.html'

@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
-{% block main_content %}
+{% block title %}
+FAQs
+{% endblock title %}
 
-{# page_title #}
-{% include 'page_title.html' %}
+{% block main_content %}
+{% include 'components/page-title.html' %}
 
 <!-- faq starts -->
 <div class="accordion" id="accordionFaq">

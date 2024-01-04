@@ -1,0 +1,93 @@
+<div class="modal modal-dark" tabindex="-1" id="modalEdit">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h6 class="modal-title">Update Smartphone X</h6>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-lg-6">
+                            <label for="productInput" class="form-label">Product</label>
+                            <input type="text" class="form-control" id="productInput" placeholder="product title" value="Smartphone X">
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="categorySelect" class="form-label">Product</label>
+                            <select id="categorySelect" class="form-select" aria-label="Default select example">
+                                <option>Category</option>
+                                <option value="1">Electronics</option>
+                                <option value="2" selected>Computers</option>
+                                <option value="3">Fitness</option>
+                                <option value="3">......</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-lg-6">
+                            <label for="priceInput" class="form-label">Price</label>
+                            <input type="text" class="form-control" id="priceInput" placeholder="product price" value="$599.99">
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="skuInput" class="form-label">SKU</label>
+                            <input type="text" class="form-control" id="skuInput" placeholder="product sku" value="200">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-lg-6">
+                            <label for="weightInput" class="form-label">Weight</label>
+                            <input type="text" class="form-control" id="weightInput" placeholder="product weight" value="500 gm">
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="dateInput" class="form-label">Modified Date</label>
+                            <input type="text" class="form-control" id="dateInput" placeholder="product modified date" value="2023-12-20">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-lg-12">
+                            <label for="supplierDataList" class="form-label">Supplier</label>
+                            <input class="form-control" list="datalistOptions" id="supplierDataList"
+                                placeholder="Type to search..." value="s001" aria-describedby="supplierHelpInline">
+                            <datalist id="datalistOptions">
+                                <option value="s001">
+                                <option value="s002">
+                                <option value="s003">
+                                <option value="s004">
+                            </datalist>
+                            <span id="supplierHelpInline" class="form-text">
+                                You can also search from the DataList.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-lg-12">
+                            <label for="formFile" class="form-label">Upload image</label>
+                            <input class="form-control" type="file" id="formFile" placeholder="product img" value="images/smartphone-200x200.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-lg-12">
+                            <label for="descriptionTextArea" class="form-label">Description</label>
+                            <textarea class="form-control" id="descriptionTextArea" rows="3" placeholder="product description">some description is here.</textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Form check option
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Update</button>
+            </div>
+        </div>
+    </div>
+</div>

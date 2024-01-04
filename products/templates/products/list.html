@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+Products
+{% endblock title %}
+
 {% block main_content %}
 <!-- breadcrumb -->
 <!-- todo -->
@@ -78,10 +82,10 @@
                                 <td>{{ i.last_update_date }}</td>
                                 <td>{{ i.supplier_info.supplier_id }}</td>
                                 <td>
-                                    <a href="#" class="amj-a me-2">
+                                    <a href="#" class="amj-a me-2" data-bs-toggle="modal" data-bs-target="#modalDetail">
                                         <i class="bi bi-link-45deg"></i>
                                     </a>
-                                    <a href="#" class="amj-a me-2">
+                                    <a href="#" class="amj-a me-2" data-bs-toggle="modal" data-bs-target="#modalEdit">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
                                     <a href="#" class="amj-a me-2" data-bs-toggle="modal"
@@ -117,7 +121,27 @@
 </div>
 <!-- table ends -->
 
+<style>
+    /* TODO: refactor */
+    .modal-dark .modal-header {
+        border-bottom: 1px solid var(--amj-border-primary-color);
+    }
+
+    .modal-dark .modal-footer {
+        border-top: 1px solid var(--amj-border-primary-color);
+    }
+</style>
+
+<!-- modal for detail -->
+{% include 'modals/modal-detail.html' %}
+<!-- modal for detail ends -->
+
+<!-- modal for edit -->
+{% include 'modals/modal-edit.html' %}
+<!-- modal for edit ends -->
+
 <!-- modal for delete -->
-{% include 'products/modal_delete_confirmation.html' %}
+{% include 'modals/modal-delete-confirmation.html' %}
 <!-- modal for delete ends -->
+
 {% endblock main_content %}
