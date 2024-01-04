@@ -22,5 +22,4 @@ class FaqTemplateView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['faqs'] = self.get_json_data('faqs.json')
         context['page_title'] = "FAQs"
-        context['display'] = "d-none"
         return context

@@ -369,6 +369,14 @@ hr {
     --bs-pagination-hover-color: var(--amj-teal-primary);
 }
 
+
+/**
+ *  ----- ----- ----- .accordion ----- ----- -----
+ */
+
+
+
+
 /**
  *  ----- ----- ----- ul.timeline ----- ----- -----
  */
@@ -659,6 +667,11 @@ footer {
 }
 
 @media screen and (max-width:991px) {
+
+    // ----- chartjs -----
+    #lineChartExampleOne {
+        height: 200px !important;
+    }
 
     // ----- others -----
     .sm-d-none {

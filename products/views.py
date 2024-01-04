@@ -17,6 +17,7 @@ class ProductEditFormTemplateView(TemplateView):
 
 
 class ProductListTemplateView(TemplateView):
+    extra_context = {'page_title': 'Products'}
     template_name = 'products/list.html'
 
     def get_json_data(self, json_file):

@@ -11,6 +11,7 @@ class BlankPageTemplateView(TemplateView):
 
 
 class DashboardTemplateView(TemplateView):
+    extra_context = {'page_title': 'Dashboard'}
     template_name = 'dashboard/dashboard.html'
 
     def get_context_data(self, **kwargs):
@@ -18,6 +19,7 @@ class DashboardTemplateView(TemplateView):
         context['internal_projects'] = get_json_data('dashboardInternalProjects.json')
         context['order_status'] = get_json_data('dashboardOrderStatus.json')
         context['quick_info_data'] = get_json_data('dashboardQuickInfo.json')
+        context['product_purchase_sales'] = get_json_data('productsPurchaseAndSales.json')
         context['recently_added_products'] = get_json_data('dashboardRecentlyAddedProducts.json')
         context['vistors_browser'] = get_json_data('visitorsBrowser.json')
         return context

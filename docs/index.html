@@ -277,21 +277,22 @@ Dashboard
 
                 <!-- main_content -->
                 
-<!-- pagetitle -->
+
+<!-- page title -->
 <div class="pageTitle pt-4 sm-pt-0">
     <h3>Dashboard</h3>
-    <div class="btn-toolbar mb-2 mb-md-0">
+    <div class="btn-toolbar mb-2 mb-md-0 ">
         <div class="btn-group me-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Generate report</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
         <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
             <span data-feather="calendar"></span>
-            This week
+            More options
         </button>
     </div>
 </div>
-<!-- pagetitle ends -->
+<!-- page title ends -->
 
 <!-- row for cardQuickInfo -->
 <div class="row mt-4" id="sectionDashboardQuickInfo">
@@ -369,8 +370,17 @@ Dashboard
 
 <div class="row mt-4">
     <div class="col-lg-8">
-        <!-- internal_projects -->
+        <!-- purhcase_sales_history -->
         <div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Purchase & Sales History</h4>
+        <canvas id="lineChartExampleOne" style="height: 350px; width: 100%;"></canvas>
+    </div>
+</div>
+        <!-- purhcase_sales_history ends -->
+
+        <!-- internal_projects -->
+        <div class="card mt-4 sm-mt-2">
     <div class="card-header py-3">
         <h4 class="m-0">Internal Projects</h4>
     </div>
@@ -419,7 +429,7 @@ Dashboard
             
             <tr>
                 <td>
-                    <i class="bi bi-circle-fill bg-dark me-2" style="color: red;"></i>
+                    <i class="bi bi-circle-fill bg-dark me-2" style="color: #dc3545;"></i>
                     Safari
                 </td>
                 <td>10%</td>
@@ -427,7 +437,7 @@ Dashboard
             
             <tr>
                 <td>
-                    <i class="bi bi-circle-fill bg-dark me-2" style="color: yellow;"></i>
+                    <i class="bi bi-circle-fill bg-dark me-2" style="color: #ffda6a;"></i>
                     Chrome
                 </td>
                 <td>21%</td>
@@ -435,7 +445,7 @@ Dashboard
             
             <tr>
                 <td>
-                    <i class="bi bi-circle-fill bg-dark me-2" style="color: green;"></i>
+                    <i class="bi bi-circle-fill bg-dark me-2" style="color: #20c997;"></i>
                     IE
                 </td>
                 <td>19%</td>
@@ -443,7 +453,7 @@ Dashboard
             
             <tr>
                 <td>
-                    <i class="bi bi-circle-fill bg-dark me-2" style="color: purple;"></i>
+                    <i class="bi bi-circle-fill bg-dark me-2" style="color: #6f42c1;"></i>
                     Opera
                 </td>
                 <td>5%</td>
@@ -451,7 +461,7 @@ Dashboard
             
             <tr>
                 <td>
-                    <i class="bi bi-circle-fill bg-dark me-2" style="color: orange;"></i>
+                    <i class="bi bi-circle-fill bg-dark me-2" style="color: #fd7e14;"></i>
                     Firefox
                 </td>
                 <td>42%</td>
@@ -459,7 +469,7 @@ Dashboard
             
             <tr>
                 <td>
-                    <i class="bi bi-circle-fill bg-dark me-2" style="color: indigo;"></i>
+                    <i class="bi bi-circle-fill bg-dark me-2" style="color: #6610f2;"></i>
                     Others
                 </td>
                 <td>3%</td>
@@ -662,9 +672,19 @@ Dashboard
             <!-- divider for footer -->
             <div class="mt-4"></div>
             <footer class="py-3 mt-auto container-fluid">
-                <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
-                    <span class="mb-3 mb-md-0">© 2023 Ashish S. Maharjan</span>
+                <div class="row">
+                    <div class="col text-small">
+                        <span class="mb-3 mb-md-0">© Your Company | 2024</span>
+                    </div>
+                    <div class="col text-small text-end">
+                        <span class="mb-3 mb-md-0">
+                            Designed by <a href="https://github.com/asis2016/bootstrap-5-admin-template">adminAM - Bootstrap 5 Admin Template</a>
+                        </span>
+                    </div>
                 </div>
+                <!-- <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
+                    
+                </div> -->
             </footer>
             <!-- footer ends -->
         </div>
@@ -1044,7 +1064,8 @@ Dashboard
     <script src="static/js/script.js"></script>
 
     
-    
+<script src="static/js/dashboard.js"></script>
+
 </body>
 
 </html>

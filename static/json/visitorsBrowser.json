@@ -2,36 +2,31 @@
   {
     "browser": "Safari",
     "visits": 10,
-    "color": "red"
+    "color": "#dc3545"
   },
   {
     "browser": "Chrome",
     "visits": 21,
-    "color": "yellow"
-
+    "color": "#ffda6a"
   },
   {
     "browser": "IE",
     "visits": 19,
-    "color": "green"
-
+    "color": "#20c997"
   },
   {
     "browser": "Opera",
     "visits": 5,
-    "color": "purple"
-
+    "color": "#6f42c1"
   },
   {
     "browser": "Firefox",
     "visits": 42,
-    "color": "orange"
-
+    "color": "#fd7e14"
   },
   {
     "browser": "Others",
     "visits": 3,
-    "color": "indigo"
-
+    "color": "#6610f2"
   }
 ]

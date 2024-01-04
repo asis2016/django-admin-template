@@ -1,0 +1,62 @@
+[
+    {
+        "month": "January",
+        "purchased": 5000,
+        "sales": 8000
+    },
+    {
+        "month": "February",
+        "purchased": 6000,
+        "sales": 8500
+    },
+    {
+        "month": "March",
+        "purchased": 7000,
+        "sales": 9000
+    },
+    {
+        "month": "April",
+        "purchased": 5500,
+        "sales": 8200
+    },
+    {
+        "month": "May",
+        "purchased": 6800,
+        "sales": 9500
+    },
+    {
+        "month": "June",
+        "purchased": 7500,
+        "sales": 8800
+    },
+    {
+        "month": "July",
+        "purchased": 8000,
+        "sales": 9200
+    },
+    {
+        "month": "August",
+        "purchased": 7200,
+        "sales": 8600
+    },
+    {
+        "month": "September",
+        "purchased": 6700,
+        "sales": 9100
+    },
+    {
+        "month": "October",
+        "purchased": 7100,
+        "sales": 9800
+    },
+    {
+        "month": "November",
+        "purchased": 5900,
+        "sales": 8700
+    },
+    {
+        "month": "December",
+        "purchased": 8500,
+        "sales": 10500
+    }
+]
