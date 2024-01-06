@@ -386,6 +386,9 @@ footer {
   color: #fff;
   border-top: 1px solid var(--amj-border-primary-color); }
 
+.list-group {
+  --bs-list-group-bg: var(var(--amj-bg-primary-color)); }
+
 /**
  * ----- ----- ----- others ----- ----- -----
  */
