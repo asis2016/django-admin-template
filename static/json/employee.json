@@ -1,0 +1,30 @@
+{
+    "employeeId": 1234,
+    "initials": "JD",
+    "firstName": "John",
+    "lastName": "Doe",
+    "position": "Senior Software Engineer",
+    "department": "Technology",
+    "email": "john.doe@example.com",
+    "phoneNumber": "+1 (555) 123-4567",
+    "address": {
+        "street": "123 Main St",
+        "city": "Techville",
+        "state": "CA",
+        "zipCode": "12345"
+    },
+    "startDate": "2023-03-15",
+    "salary": 90000.00,
+    "skills": [
+        "Python",
+        "Spring Framework",
+        "JavaScript",
+        "React"
+    ],
+    "benefits": {
+        "healthInsurance": true,
+        "dentalInsurance": true,
+        "401k": true,
+        "vacationDays": 20
+    }
+}
