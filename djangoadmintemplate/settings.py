@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'syslogs.apps.SyslogsConfig',
     'userprofile.apps.UserprofileConfig',
     'sales.apps.SalesConfig',
+    'expenses.apps.ExpensesConfig',
 
 ]
 

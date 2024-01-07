@@ -1,0 +1,150 @@
+{
+    "expenses_by_sub_categories": [
+        {
+            "subCategory": "food",
+            "amount": 0.5
+        },
+        {
+            "subCategory": "transportation",
+            "amount": 0.2
+        },
+        {
+            "subCategory": "marketing",
+            "amount": 1.3
+        },
+        {
+            "subCategory": "insurance",
+            "amount": 0.8
+        },
+        {
+            "subCategory": "servers",
+            "amount": 0.6
+        },
+        {
+            "subCategory": "team_events",
+            "amount": 0.4
+        },
+        {
+            "subCategory": "electricity",
+            "amount": 0.9
+        },
+        {
+            "subCategory": "office_supplies",
+            "amount": 0.1
+        },
+        {
+            "subCategory": "travel_expenses",
+            "amount": 0.3
+        },
+        {
+            "subCategory": "training",
+            "amount": 0.7
+        }
+    ],
+    "january_expenses": [
+        {
+            "category": "Office Supplies",
+            "budget": 50,
+            "expense": 42,
+            "diff": 16
+        },
+        {
+            "category": "Marketing",
+            "budget": 120,
+            "expense": 105,
+            "diff": 12.5
+        },
+        {
+            "category": "Travel",
+            "budget": 80,
+            "expense": 75,
+            "diff": 6.25
+        },
+        {
+            "category": "IT Services",
+            "budget": 150,
+            "expense": 130,
+            "diff": 13.33
+        },
+        {
+            "category": "Training",
+            "budget": 60,
+            "expense": 58,
+            "diff": 3.33
+        }
+    ],
+    "january_expenses_details": [
+        {
+            "title": "Business Dinner",
+            "expense": 2.00,
+            "category": "Meals & Entertainment",
+            "date": "2024-01-15",
+            "created_by": "John Doe",
+            "approved_by": "Manager A"
+        },
+        {
+            "title": "Office Supplies",
+            "expense": 3.50,
+            "category": "Office Expenses",
+            "date": "2024-01-05",
+            "created_by": "Jane Smith",
+            "approved_by": "Manager B"
+        },
+        {
+            "title": "Marketing Campaign",
+            "expense": 5.50,
+            "category": "Marketing",
+            "date": "2024-01-20",
+            "created_by": "Bob Johnson",
+            "approved_by": "Manager C"
+        },
+        {
+            "title": "Travel Expenses",
+            "expense": 2.75,
+            "category": "Travel",
+            "date": "2024-01-10",
+            "created_by": "Alice Brown",
+            "approved_by": "Manager D"
+        },
+        {
+            "title": "Training Workshop",
+            "expense": 1.50,
+            "category": "Training",
+            "date": "2024-01-15",
+            "created_by": "Eva Green",
+            "approved_by": "Manager E"
+        },
+        {
+            "title": "Misc",
+            "expense": 1.50,
+            "category": "Training",
+            "date": "2024-01-15",
+            "created_by": "Green Eva",
+            "approved_by": "Manager E"
+        },
+        {
+            "title": "Misc",
+            "expense": 1.50,
+            "category": "Training",
+            "date": "2024-01-15",
+            "created_by": "Green Eva",
+            "approved_by": "Manager E"
+        }
+    ],
+    "total_data": {
+        "budgets": [
+            {
+                "title": "Budget Forecast",
+                "value": "$10.3M"
+            },
+            {
+                "title": "Amount Spent",
+                "value": "$5.15M"
+            },
+            {
+                "title": "Exceed by",
+                "value": "50%"
+            }
+        ]
+    }
+}

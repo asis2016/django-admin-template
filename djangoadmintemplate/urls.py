@@ -14,6 +14,10 @@ from products.views import (
 from sales.views import (
     SalesListTemplateView
 )
+#expenses
+from expenses.views import (
+    ExpensesListTemplateView
+)
 from syslogs.views import SysLogTemplateView
 from userprofile.views import UserProfileTemplateView, ProfileSettingsTemplateView
 
@@ -29,6 +33,9 @@ urlpatterns = [
     
     #sales
     path('sales/', SalesListTemplateView.as_view(), name='sales'),
+
+    #expenses
+    path('expenses/', ExpensesListTemplateView.as_view(), name='expenses'),
 
 
     #from dashboard.views

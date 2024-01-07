@@ -4,11 +4,11 @@ from utils import get_json_data
 
 import json
 
-class SalesListTemplateView(TemplateView):
-    extra_context = {'page_title': 'Sales Report'}
-    template_name = 'sales/index.html'
+class ExpensesListTemplateView(TemplateView):
+    extra_context = {'page_title': 'Expense Report'}
+    template_name = 'expenses/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['sales_report'] = get_json_data('sales.json')
+        context['expense_report'] = get_json_data('expenses.json')
         return context
