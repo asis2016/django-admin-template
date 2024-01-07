@@ -4,7 +4,7 @@ from dashboard.views import (
     BlankPageTemplateView, DashboardTemplateView, DocumentationTemplateView, FourZeroFourTemplateView, 
     LoginTemplateView, MailTemplateView, RegisterTemplateView, SinglePageTemplateView, SearchResultTemplateView
 )
-#
+#products
 from faq.views import FaqTemplateView
 from products.views import (
     ProductChartTemplateView,

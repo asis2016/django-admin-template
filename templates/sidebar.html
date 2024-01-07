@@ -6,7 +6,7 @@
             <span class="fs-4 logo-lg only-d-lg">
                 <img src="{% static 'img/logo-100x25.png' %}" alt="">
             </span>
-            
+
             <!-- logo for SM screen -->
             <span class="fs-4 logo-sm only-d-sm">
                 <img src="{% static 'img/logo-40x25.png' %}" alt="">
@@ -32,21 +32,9 @@
                 </a>
             </li>
             <li>
-                <a href="{% url 'products' %}" class="nav-link">
-                    <i class="bi bi-table me-2"></i>
-                    Products
-                </a>
-            </li>
-            <li>
                 <a href="#" class="nav-link">
                     <i class="bi bi-ui-checks-grid me-2"></i>
                     Forms
-                </a>
-            </li>
-            <li>
-                <a href="{% url 'charts' %}" class="nav-link">
-                    <i class="bi bi-graph-up me-2"></i>
-                    ChatJS
                 </a>
             </li>
             <li>
@@ -55,9 +43,29 @@
                     Blank Page
                 </a>
             </li>
+            <!-- products -->
+            <p class="mt-2 mb-1 text-secondary text-small">PRODUCTS</p>
+            <li>
+                <a href="{% url 'products' %}" class="nav-link">
+                    <i class="bi bi-table me-2"></i>
+                    Products
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'sales' %}" class="nav-link">
+                    <i class="bi bi-bank me-2"></i>
+                    Sales
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'sales' %}" class="nav-link">
+                    <i class="bi bi-receipt me-2"></i>
+                    Expense
+                </a>
+            </li>
 
             <!-- accounts -->
-            <p class="my-2 text-secondary text-small">ACCOUNTS</p>
+            <p class="mt-2 mb-1 text-secondary text-small">ACCOUNTS</p>
             <li>
                 <a href="{% url 'login' %}" class="nav-link">
                     <i class="bi bi-box-arrow-right me-2"></i>
@@ -78,7 +86,7 @@
             </li>
 
             <!-- others -->
-            <p class="my-2 text-secondary text-small">OTHERS</p>
+            <p class="mt-2 mb-1 text-secondary text-small">OTHERS</p>
             <li>
                 <a href="{% url '404' %}" class="nav-link">
                     <i class="bi bi-4-circle-fill me-2"></i>
