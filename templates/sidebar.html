@@ -18,6 +18,8 @@
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
+            <!-- accounts -->
+            <p class="mt-2 mb-1 text-secondary text-small">DASHBOARD</p>
             <li class="nav-item">
                 <a href="{% url 'dashboard' %}" class="nav-link active" aria-current="page">
                     <i class="bi bi-house-door-fill me-2"></i>
@@ -31,16 +33,11 @@
                     Widgets
                 </a>
             </li>
-            <li>
+            <!-- todo -->
+            <li class="d-none">
                 <a href="#" class="nav-link">
                     <i class="bi bi-ui-checks-grid me-2"></i>
                     Forms
-                </a>
-            </li>
-            <li>
-                <a href="{% url 'blank_page' %}" class="nav-link">
-                    <i class="bi bi-file-earmark-fill me-2"></i>
-                    Blank Page
                 </a>
             </li>
             <!-- products -->
@@ -91,6 +88,12 @@
                 <a href="{% url '404' %}" class="nav-link">
                     <i class="bi bi-4-circle-fill me-2"></i>
                     404
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'blank_page' %}" class="nav-link">
+                    <i class="bi bi-file-earmark-fill me-2"></i>
+                    Blank Page
                 </a>
             </li>
             <li>

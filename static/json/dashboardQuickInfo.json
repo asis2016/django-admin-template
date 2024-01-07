@@ -21,6 +21,6 @@
         "title": "$ 10.5k",
         "description": "Yearly expense report",
         "icon": "<i class='bi bi-receipt'></i>",
-        "urls": "single-page"
+        "urls": "expenses"
     }
 ]
