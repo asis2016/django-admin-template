@@ -5,7 +5,7 @@ import json
 
 class SalesListTemplateView(TemplateView):
     extra_context = {'page_title': 'Sales Report'}
-    template_name = 'sales/list.html'
+    template_name = 'sales/index.html'
 
     def get_json_data(self, json_file):
         '''

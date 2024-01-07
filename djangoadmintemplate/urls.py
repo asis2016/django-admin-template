@@ -41,7 +41,7 @@ urlpatterns = [
     path('blank-page/', BlankPageTemplateView.as_view(), name='blank_page'),
     path('documentation/', DocumentationTemplateView.as_view(), name='documentation'),
     path('mail/', MailTemplateView.as_view(), name='mail'),
-    path('single-page/', SinglePageTemplateView.as_view(), name='single_page'),
+    path('single-page/', SinglePageTemplateView.as_view(), name='single-page'),
     path('search-results/', SearchResultTemplateView.as_view(), name='search_result_page'),
 
     #syslogs

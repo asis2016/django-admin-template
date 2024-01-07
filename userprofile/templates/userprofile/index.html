@@ -14,23 +14,25 @@ My Profile
         <div class="card">
             <div class="card-body">
                 <div class="profileNameInitials d-flex justify-content-center align-item-center">
-                    <h6 class="fs-2">
-                        {{ profile.initials }}
-                    </h6>
+                    <h6 class="fs-2">{{ profile.initials }}</h6>
                 </div>
-
                 <ul class="list-group list-group-flush rounded">
                     <li class="list-group-item" id="user">
                         {{ profile.firstName }} {{ profile.lastName }}
                     </li>
                     <li class="list-group-item" id="home">
-                        <i class="bi bi-folder me-2"></i> <span>{{ profile.department }}</span>
+                        <i class="bi bi-folder me-2"></i> <span>{{ profile.position }}</span>
                     </li>
                     <li class="list-group-item" id="shell">
-                        <i class="bi bi-terminal me-2"></i> <span>{{ profile.position }}</span>
+                        <i class="bi bi-terminal me-2"></i> <span>{{ profile.department }}</span>
+                    </li>
+                    <li class="list-group-item" id="shell">
+                        <i class="bi bi-currency-euro me-2"></i> Base salary: <span>{{ profile.salary }}</span>
+                    </li>
+                    <li class="list-group-item" id="shell">
+                        <i class="bi bi-calendar-check me-2"></i> Joined: <span>{{ profile.startDate }}</span>
                     </li>
                 </ul>
-
             </div>
         </div>
     </div>
@@ -61,100 +63,104 @@ My Profile
                         aria-labelledby="nav-profile-tab" tabindex="0">
                         <!-- form -->
                         <form class="py-4 px-4">
-
-                            <!-- $ id -->
+                            <!-- id -->
                             <div class="row mb-3">
                                 <label for="inputId" class="col-sm-2 col-form-label">
-                                    $ id
+                                    Id
                                 </label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputId" value="NA" disabled>
+                                    <input type="text" class="form-control" id="inputId"
+                                        value="{{ profile.employeeId }}">
                                 </div>
                             </div>
-                            <!-- $ uname -a -->
+                            <!-- firstName -->
                             <div class="row mb-3">
                                 <label for="inputUname" class="col-sm-2 col-form-label">
-                                    $ uname -a
+                                    Firstname
                                 </label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputUname" value="NA" disabled>
+                                    <input type="text" class="form-control" id="inputUname"
+                                        value="{{ profile.firstName }}">
                                 </div>
                             </div>
-                            <!-- $ /etc/passwd -->
+                            <!-- lastName -->
                             <div class="row mb-3">
-                                <label for="inputEtcPasswd" class="col-sm-2 col-form-label">
-                                    /etc/passwd
+                                <label for="inputlastName" class="col-sm-2 col-form-label">
+                                    Lastname
                                 </label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputEtcPasswd" value="NA"
-                                        aria-describedby="inputEtcPasswdHelp" disabled>
+                                    <input type="text" class="form-control" id="inputlastName"
+                                        value="{{ profile.lastName }}">
+                                </div>
+                            </div>
+                            <!-- email -->
+                            <div class="row mb-3">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">
+                                    Email address
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputEmail" value="{{ profile.email }}"
+                                        aria-describedby="inputEtcPasswdHelp">
                                     <div id="inputEtcPasswdHelp" class="form-text">
-                                        $ grep $USER /etc/passwd
+                                        Your email is organized by YourCompany Ltd.
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- inputHardwareVendor -->
-                            <!-- $ hostnamectl |grep "Hardware Vendor" -->
+                            <!-- Phone number -->
                             <div class="row mb-3">
-                                <label for="inputHardwareVendor" class="col-sm-2 col-form-label">
-                                    Hardware vendor
+                                <label for="phoneNumber" class="col-sm-2 col-form-label">
+                                    Phone number
                                 </label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputHardwareVendor" value="NA"
-                                        disabled>
+                                    <input type="text" class="form-control" id="phoneNumber"
+                                        value="{{ profile.phoneNumber }}">
                                 </div>
                             </div>
-                            <!-- inputHardwareVendor ends -->
-
-                            <!-- inputHardwareModel -->
-                            <!-- $ hostnamectl |grep "Hardware Vendor" -->
+                            <!-- address -->
                             <div class="row mb-3">
-                                <label for="inputHardwareModel" class="col-sm-2 col-form-label">
-                                    Hardware model
+                                <label class="col-sm-2 col-form-label">
+                                    Address
                                 </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputHardwareModel" value="NA" disabled>
+                                <div class="col-md-4">
+                                    <label for="inputSettingB" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputSettingB"
+                                        value="{{ profile.address.street }}, {{ profile.address.city }}">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputSettingC" class="form-label">State</label>
+                                    <select id="inputSettingC" class="form-select">
+                                        <option selected>
+                                            {{ profile.address.state }}
+                                        </option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip"
+                                        value="{{ profile.address.zipCode }}">
                                 </div>
                             </div>
-                            <!-- inputHardwareModel ends -->
+                            <!-- address ends -->
 
-                            <!-- inputArchitecture -->
-                            <!-- $ hostnamectl |grep "Architecture" -->
+                            <!-- Benefits -->
                             <div class="row mb-3">
-                                <label for="inputArchitecture" class="col-sm-2 col-form-label">
-                                    Architecture
+                                <label class="col-sm-2 col-form-label">
+                                    Benefits
                                 </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputArchitecture" value="NA" disabled>
-                                </div>
-                            </div>
-                            <!-- inputKernel ends -->
-
-                            <!-- inputKernel -->
-                            <!-- $ hostnamectl |grep "Kernel" -->
-                            <div class="row mb-3">
-                                <label for="inputKernel" class="col-sm-2 col-form-label">
-                                    Kernel
-                                </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputKernel" value="NA" disabled>
-                                </div>
-                            </div>
-                            <!-- inputKernel ends -->
-
-                            <!-- checkbox -->
-                            <div class="row mb-3 d-none">
-                                <div class="col-sm-10 offset-sm-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                {% for i in profile.benefits %}
+                                <div class="col-sm-2">
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1" checked
+                                            disabled>
                                         <label class="form-check-label" for="gridCheck1">
-                                            Example checkbox
+                                            {{ i.name }}
                                         </label>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
-                            <!-- checkbox ends -->
+                            <!-- Benefits ends -->
                         </form>
                         <!-- form ends -->
                     </div>
@@ -174,5 +180,56 @@ My Profile
         </div>
     </div>
     <!-- profile tabs ends -->
+
+    <!-- settings tabs -->
+    <div class="offset-lg-3 col-lg-9 mt-4 sm-my-3">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="my-2">Settings</h6>
+            </div>
+            <div class="card-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputLanguage" class="form-label">
+                            Preferred spoken language
+                        </label>
+                        <input type="text" class="form-control" id="inputLanguage" value="EN">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputSettingA" class="form-label">Setting A</label>
+                        <input type="text" class="form-control" id="inputSettingA" value="Setting A">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label for="inputSettingB" class="form-label">Setting B</label>
+                        <input type="text" class="form-control" id="inputSettingB" value="Setting B">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputSettingC" class="form-label">Setting C</label>
+                        <select id="inputSettingC" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputSettingD" class="form-label">Setting D</label>
+                        <input type="text" class="form-control" id="inputSettingD">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Some other settings
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-warning">Update Settings</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- settings tabs ends -->
 </div>
 {% endblock main_content %}

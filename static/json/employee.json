@@ -9,9 +9,9 @@
     "phoneNumber": "+1 (555) 123-4567",
     "address": {
         "street": "123 Main St",
-        "city": "Techville",
-        "state": "CA",
-        "zipCode": "12345"
+        "city": "Kathmandu",
+        "state": "Bagmati",
+        "zipCode": "00977"
     },
     "startDate": "2023-03-15",
     "salary": 90000.00,
@@ -21,10 +21,18 @@
         "JavaScript",
         "React"
     ],
-    "benefits": {
-        "healthInsurance": true,
-        "dentalInsurance": true,
-        "401k": true,
-        "vacationDays": 20
-    }
+    "benefits": [
+        {
+            "name": "Premium"
+        },
+        {
+            "name": "Dentals"
+        },
+        {
+            "name": "401K"
+        },
+        {
+            "name": "Himal bonus"
+        }
+    ]
 }
