@@ -1,8 +1,5 @@
 from django.views.generic import TemplateView
-from django.contrib.staticfiles.finders import find
-from .context_processors import get_json_data
-
-import json
+from .context_processors import *
 
 
 class BlankPageTemplateView(TemplateView):
