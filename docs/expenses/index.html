@@ -9,7 +9,7 @@
     <meta name="author" content="Ashish S. Maharjan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dark Django Admin Template | 
-Search results
+Expense Report
 </title>
 
     <!-- <meta http-equiv="refresh" content="5"/> -->
@@ -25,7 +25,7 @@ Search results
 
     
     
-    
+
 </head>
 
 <body>
@@ -88,7 +88,7 @@ Search results
                 </a>
             </li>
             <li>
-                <a href="../expenses/index.html" class="nav-link">
+                <a href="index.html" class="nav-link">
                     <i class="bi bi-receipt me-2"></i>
                     Expense
                 </a>
@@ -169,7 +169,7 @@ Search results
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <div class="input-group text-white">
                     <input type="text" class="form-control form-control-dark text-bg-dark text-white" placeholder="search here">
-                    <a class="btn" href="index.html">
+                    <a class="btn" href="../search-results/index.html">
                         <i class="bi bi-search"></i>
                     </a>
                 </div>
@@ -281,7 +281,7 @@ Search results
         <form>
             <div class="input-group">
                 <input type="text" class="form-control form-control-dark text-bg-dark text-white" value="search here">
-                <a class="btn" href="index.html">
+                <a class="btn" href="../search-results/index.html">
                     <i class="bi bi-search"></i>
                 </a>
             </div>
@@ -295,8 +295,8 @@ Search results
 
 <!-- page title -->
 <div class="pageTitle pt-4 sm-pt-0">
-    <h3>Search results</h3>
-    <div class="btn-toolbar mb-2 mb-md-0 d-none">
+    <h3>Expense Report</h3>
+    <div class="btn-toolbar mb-2 mb-md-0 ">
         <div class="btn-group me-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Generate report</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
@@ -309,221 +309,235 @@ Search results
 </div>
 <!-- page title ends -->
 
-<div class="row mt-4">
-    <div class="col-lg-6">
+<!-- 1st row -->
+<div class="row mt-4 sm-mt-0">
+    <div class="col-lg-5">
+        <!-- boxes -->
+        <div class="row sm-mt-0">
+            
+            <div class="col-lg-4 sm-mb-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6>Budget Forecast</h6>
+                        <h2>
+                            $10.3M
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 sm-mb-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6>Amount Spent</h6>
+                        <h2>
+                            $5.15M
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 sm-mb-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6>Exceed by</h6>
+                        <h2>
+                            50%
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- boxes ends -->
 
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Premium Wireless Headphones</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/headphones
-                    </a>
-                </p>
-                <p class="my-2">
-                    Immerse yourself in high-quality audio with our premium wireless headphones.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">audio</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">headphones</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">wireless</span>
-                
-                <!-- tags ends -->
+        <!-- Jan expenses -->
+        <div class="row mt-4 sm-mt-0">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="my-2">January Expenses</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table overflow-scroll table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Budget</th>
+                                        <th>Expense</th>
+                                        <th>-/*</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td>
+                                            Office Supplies
+                                        </td>
+                                        <td>50K</td>
+                                        <td>42K</td>
+                                        <td>16%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Marketing
+                                        </td>
+                                        <td>120K</td>
+                                        <td>105K</td>
+                                        <td>12.5%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Travel
+                                        </td>
+                                        <td>80K</td>
+                                        <td>75K</td>
+                                        <td>6.25%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            IT Services
+                                        </td>
+                                        <td>150K</td>
+                                        <td>130K</td>
+                                        <td>13.33%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Training
+                                        </td>
+                                        <td>60K</td>
+                                        <td>58K</td>
+                                        <td>3.33%</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Smart Home Security System</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/security-system
-                    </a>
-                </p>
-                <p class="my-2">
-                    Protect your home with our advanced smart security system, ensuring peace of mind.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">home</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">security</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">smart</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Fashionable Smartwatch</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/smartwatch
-                    </a>
-                </p>
-                <p class="my-2">
-                    Stay connected and stylish with our fashionable smartwatch, packed with features for modern living.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">fashion</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">wearables</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">technology</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Compact Espresso Machine</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/espresso-machine
-                    </a>
-                </p>
-                <p class="my-2">
-                    Savor the rich taste of freshly brewed coffee with our compact espresso machine, designed for coffee enthusiasts.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">coffee</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">appliances</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">compact</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Outdoor Adventure Backpack</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/adventure-backpack
-                    </a>
-                </p>
-                <p class="my-2">
-                    Embark on thrilling adventures with our durable and feature-packed outdoor adventure backpack.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">outdoors</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">adventure</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">backpack</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Professional Camera Drone</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/camera-drone
-                    </a>
-                </p>
-                <p class="my-2">
-                    Capture stunning aerial shots with our professional camera drone, perfect for photography and videography enthusiasts.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">photography</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">drones</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">technology</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Organic Skincare Set</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/skincare-set
-                    </a>
-                </p>
-                <p class="my-2">
-                    Nourish your skin with our organic skincare set, crafted with natural ingredients for a radiant complexion.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">beauty</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">skincare</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">organic</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Home Fitness Equipment</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/fitness-equipment
-                    </a>
-                </p>
-                <p class="my-2">
-                    Achieve your fitness goals at home with our versatile and high-quality home fitness equipment.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">fitness</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">home</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">exercise</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-
+        <!-- Jan expenses ends -->
     </div>
+
+    <!-- bar chart -->
+    <div class="col-lg-7 sm-mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="my-2">Expenses by Sub-categories</h6>
+            </div>
+            <div class="card-body">
+                <canvas id="subCategoryChart" style="height: 420px; width: 100%;"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- bar chart ends -->
 </div>
+<!-- 1st row ends -->
+
+<!-- 2nd row -->
+<div class="row mt-4 sm-mt-3">
+    <!-- expenseQuartlyReport -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <div id="expenseQuartlyReport"></div>
+            </div>
+        </div>
+    </div>
+    <!-- expenseQuartlyReport ends -->
+
+    <!-- table -->
+    <div class="col-lg-8 sm-mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="my-2">Detailed expense report</h6>
+            </div>
+            <div class="card-body table-responsive">
+                <div class="table-responsive">
+                    <table class="table overflow-scroll table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Expense</th>
+                                <th>Category</th>
+                                <th>Created by</th>
+                                <th>Approved by</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>Business Dinner</td>
+                                <td>$2.0K</td>
+                                <td>Meals &amp; Entertainment</td>
+                                <td>John Doe</td>
+                                <td>Manager A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Office Supplies</td>
+                                <td>$3.5K</td>
+                                <td>Office Expenses</td>
+                                <td>Jane Smith</td>
+                                <td>Manager B</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Marketing Campaign</td>
+                                <td>$5.5K</td>
+                                <td>Marketing</td>
+                                <td>Bob Johnson</td>
+                                <td>Manager C</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Travel Expenses</td>
+                                <td>$2.75K</td>
+                                <td>Travel</td>
+                                <td>Alice Brown</td>
+                                <td>Manager D</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Training Workshop</td>
+                                <td>$1.5K</td>
+                                <td>Training</td>
+                                <td>Eva Green</td>
+                                <td>Manager E</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Misc</td>
+                                <td>$1.5K</td>
+                                <td>Training</td>
+                                <td>Green Eva</td>
+                                <td>Manager E</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Misc</td>
+                                <td>$1.5K</td>
+                                <td>Training</td>
+                                <td>Green Eva</td>
+                                <td>Manager E</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- table ends-->
+</div>
+<!-- 2nd row ends -->
 
                 <!-- main_content ends -->
             </div>
@@ -928,7 +942,8 @@ Search results
     <script src="../static/js/script.js"></script>
 
     
-    
+<script src="../static/js/expenses.js"></script>
+
 </body>
 
 </html>

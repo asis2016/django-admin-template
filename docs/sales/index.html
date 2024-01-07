@@ -9,7 +9,7 @@
     <meta name="author" content="Ashish S. Maharjan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dark Django Admin Template | 
-Search results
+Sales Report
 </title>
 
     <!-- <meta http-equiv="refresh" content="5"/> -->
@@ -82,7 +82,7 @@ Search results
                 </a>
             </li>
             <li>
-                <a href="../sales/index.html" class="nav-link">
+                <a href="index.html" class="nav-link">
                     <i class="bi bi-bank me-2"></i>
                     Sales
                 </a>
@@ -169,7 +169,7 @@ Search results
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <div class="input-group text-white">
                     <input type="text" class="form-control form-control-dark text-bg-dark text-white" placeholder="search here">
-                    <a class="btn" href="index.html">
+                    <a class="btn" href="../search-results/index.html">
                         <i class="bi bi-search"></i>
                     </a>
                 </div>
@@ -281,7 +281,7 @@ Search results
         <form>
             <div class="input-group">
                 <input type="text" class="form-control form-control-dark text-bg-dark text-white" value="search here">
-                <a class="btn" href="index.html">
+                <a class="btn" href="../search-results/index.html">
                     <i class="bi bi-search"></i>
                 </a>
             </div>
@@ -295,8 +295,8 @@ Search results
 
 <!-- page title -->
 <div class="pageTitle pt-4 sm-pt-0">
-    <h3>Search results</h3>
-    <div class="btn-toolbar mb-2 mb-md-0 d-none">
+    <h3>Sales Report</h3>
+    <div class="btn-toolbar mb-2 mb-md-0 ">
         <div class="btn-group me-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Generate report</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
@@ -309,221 +309,270 @@ Search results
 </div>
 <!-- page title ends -->
 
-<div class="row mt-4">
-    <div class="col-lg-6">
+<!-- 1st row -->
+<div class="row mt-4 sm-mt-0">
+    <div class="col-lg-5">
+        <!-- boxes -->
+        <div class="row">
+            
+            <div class="col-lg-4 sm-mb-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6>Total Revenue</h6>
+                        <h2>
+                            $10.3M
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 sm-mb-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6>Total Profit</h6>
+                        <h2>
+                            $5.15M
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 sm-mb-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6>Total Margin %</h6>
+                        <h2>
+                            50%
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- boxes ends -->
 
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Premium Wireless Headphones</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/headphones
-                    </a>
-                </p>
-                <p class="my-2">
-                    Immerse yourself in high-quality audio with our premium wireless headphones.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">audio</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">headphones</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">wireless</span>
-                
-                <!-- tags ends -->
+        <!-- bar chart -->
+        <div class="row mt-4 sm-mt-0">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="my-2">Top 10 products by revenue</h6>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="salesBarChart" style="height: 350px; width: 100%;"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Smart Home Security System</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/security-system
-                    </a>
-                </p>
-                <p class="my-2">
-                    Protect your home with our advanced smart security system, ensuring peace of mind.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">home</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">security</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">smart</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Fashionable Smartwatch</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/smartwatch
-                    </a>
-                </p>
-                <p class="my-2">
-                    Stay connected and stylish with our fashionable smartwatch, packed with features for modern living.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">fashion</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">wearables</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">technology</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Compact Espresso Machine</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/espresso-machine
-                    </a>
-                </p>
-                <p class="my-2">
-                    Savor the rich taste of freshly brewed coffee with our compact espresso machine, designed for coffee enthusiasts.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">coffee</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">appliances</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">compact</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Outdoor Adventure Backpack</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/adventure-backpack
-                    </a>
-                </p>
-                <p class="my-2">
-                    Embark on thrilling adventures with our durable and feature-packed outdoor adventure backpack.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">outdoors</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">adventure</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">backpack</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Professional Camera Drone</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/camera-drone
-                    </a>
-                </p>
-                <p class="my-2">
-                    Capture stunning aerial shots with our professional camera drone, perfect for photography and videography enthusiasts.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">photography</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">drones</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">technology</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Organic Skincare Set</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/skincare-set
-                    </a>
-                </p>
-                <p class="my-2">
-                    Nourish your skin with our organic skincare set, crafted with natural ingredients for a radiant complexion.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">beauty</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">skincare</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">organic</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
-        <div class="d-flex pt-3">
-            <img src="https://placehold.co/50x50.png" class="flex-shrink-0 me-2 rounded" width="32" height="32" alt="">
-            <div class="pb-3 mb-0 small lh-sm">
-                <p class="mb-0">
-                    <strong class="d-block">Home Fitness Equipment</strong>
-                </p>
-                <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                        www.yourcompany.priv/fitness-equipment
-                    </a>
-                </p>
-                <p class="my-2">
-                    Achieve your fitness goals at home with our versatile and high-quality home fitness equipment.
-                </p>
-                <!-- tags -->
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">fitness</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">home</span>
-                
-                <span class="badge rounded-pill text-bg-info fw-medium">exercise</span>
-                
-                <!-- tags ends -->
-            </div>
-        </div>
-        
 
     </div>
+    <!-- boxes ends -->
+
+    <!-- map -->
+    <div class="col-lg-7 sm-mt-3">
+        <div class="card">
+            <div class="card-body">
+                <div id="world-map" style="width: 100%; height: 535px"></div>
+            </div>
+        </div>
+    </div>
+    <!-- map ends -->
 </div>
+<!-- 1st row ends -->
+
+<!-- canvasQChart -->
+<!-- todo -->
+<div class="row mt-4 sm-mt-3 d-none">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <canvas id="canvasQChart" style="height: 350px; width: 100%;"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- canvasQChart ends -->
+
+<!-- table -->
+<div class="row mt-4 sm-pt-4">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="my-2">Top 10 countries</h6>
+            </div>
+            <div class="card-body table-responsive">
+                <div class="table-responsive">
+                    <table class="table overflow-scroll table-hover">
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Sales Vol</th>
+                                <th>Revenue</th>
+                                <th>Profit</th>
+                                <th>Profit margin</th>
+                                <th>Top product</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        Nepal
+                                    </a>
+                                </td>
+                                <td>$1200M</td>
+                                <td>$50M</td>
+                                <td>$25M</td>
+                                <td>50%</td>
+                                <td>Mobile App Development Tools ($0.8M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        China
+                                    </a>
+                                </td>
+                                <td>$1000M</td>
+                                <td>$48M</td>
+                                <td>$22M</td>
+                                <td>45.83%</td>
+                                <td>Enterprise CRM Suite ($1.5M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        Germany
+                                    </a>
+                                </td>
+                                <td>$800M</td>
+                                <td>$35M</td>
+                                <td>$18M</td>
+                                <td>51.43%</td>
+                                <td>Blockchain Development Toolkit ($0.55M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        United States
+                                    </a>
+                                </td>
+                                <td>$750M</td>
+                                <td>$32M</td>
+                                <td>$15M</td>
+                                <td>46.88%</td>
+                                <td>Cybersecurity Suite ($0.9M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        Brazil
+                                    </a>
+                                </td>
+                                <td>$700M</td>
+                                <td>$30M</td>
+                                <td>$14M</td>
+                                <td>46.67%</td>
+                                <td>AI-powered Customer Support System ($0.75M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        Japan
+                                    </a>
+                                </td>
+                                <td>$650M</td>
+                                <td>$28M</td>
+                                <td>$13M</td>
+                                <td>46.43%</td>
+                                <td>Enterprise CRM Suite ($1.5M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        United Kingdom
+                                    </a>
+                                </td>
+                                <td>$600M</td>
+                                <td>$26M</td>
+                                <td>$12M</td>
+                                <td>46.15%</td>
+                                <td>Virtual Collaboration Platform ($0.6M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        France
+                                    </a>
+                                </td>
+                                <td>$550M</td>
+                                <td>$24M</td>
+                                <td>$11M</td>
+                                <td>45.83%</td>
+                                <td>Data Analytics Platform ($1M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        Canada
+                                    </a>
+                                </td>
+                                <td>$500M</td>
+                                <td>$22M</td>
+                                <td>$10M</td>
+                                <td>45.45%</td>
+                                <td>AI-powered Customer Support System ($0.75M)</td>
+                            </tr>
+                            
+                            <tr>
+                                <!-- todo: country flag icons -->
+                                <td class="d-flex align-items-center">
+                                    <img src="https://placehold.co/50x50.png" class="productImg me-2" alt="">
+                                    <a href="index.html#" class="text-white amj-a">
+                                        Australia
+                                    </a>
+                                </td>
+                                <td>$450M</td>
+                                <td>$20M</td>
+                                <td>$9M</td>
+                                <td>45%</td>
+                                <td>ERP Solution for Small Businesses ($0.65M)</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- table ends-->
 
                 <!-- main_content ends -->
             </div>
@@ -928,7 +977,8 @@ Search results
     <script src="../static/js/script.js"></script>
 
     
-    
+<script src="../static/js/sales.js"></script>
+
 </body>
 
 </html>
