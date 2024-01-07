@@ -4,10 +4,15 @@ from dashboard.views import (
     BlankPageTemplateView, DashboardTemplateView, DocumentationTemplateView, FourZeroFourTemplateView, 
     LoginTemplateView, MailTemplateView, RegisterTemplateView, SinglePageTemplateView, SearchResultTemplateView
 )
+#
 from faq.views import FaqTemplateView
 from products.views import (
     ProductChartTemplateView,
     ProductListTemplateView,
+)
+#sales
+from sales.views import (
+    SalesListTemplateView
 )
 from syslogs.views import SysLogTemplateView
 from userprofile.views import UserProfileTemplateView, ProfileSettingsTemplateView
@@ -22,6 +27,10 @@ urlpatterns = [
     path('products/', ProductListTemplateView.as_view(), name='products'),
     path('products/charts/', ProductChartTemplateView.as_view(), name='charts'),
     
+    #sales
+    path('sales/', SalesListTemplateView.as_view(), name='sales'),
+
+
     #from dashboard.views
     #accounts
     path('accounts/login/', LoginTemplateView.as_view(), name='login'),

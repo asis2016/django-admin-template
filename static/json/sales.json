@@ -1,0 +1,233 @@
+{
+    "top_10_countries_revenue": [
+        {
+            "country": "Nepal",
+            "sales_volume": 1200,
+            "revenue": 50,
+            "profit": 25,
+            "profit_margin": 50,
+            "top_product": {
+                "product": "Mobile App Development Tools",
+                "revenue": 0.8
+            }
+        },
+        {
+            "country": "China",
+            "sales_volume": 1000,
+            "revenue": 48,
+            "profit": 22,
+            "profit_margin": 45.83,
+            "top_product": {
+                "product": "Enterprise CRM Suite",
+                "revenue": 1.5
+            }
+        },
+        {
+            "country": "Germany",
+            "sales_volume": 800,
+            "revenue": 35,
+            "profit": 18,
+            "profit_margin": 51.43,
+            "top_product": {
+                "product": "Blockchain Development Toolkit",
+                "revenue": 0.55
+            }
+        },
+        {
+            "country": "United States",
+            "sales_volume": 750,
+            "revenue": 32,
+            "profit": 15,
+            "profit_margin": 46.88,
+            "top_product": {
+                "product": "Cybersecurity Suite",
+                "revenue": 0.9
+            }
+        },
+        {
+            "country": "Brazil",
+            "sales_volume": 700,
+            "revenue": 30,
+            "profit": 14,
+            "profit_margin": 46.67,
+            "top_product": {
+                "product": "AI-powered Customer Support System",
+                "revenue": 0.75
+            }
+        },
+        {
+            "country": "Japan",
+            "sales_volume": 650,
+            "revenue": 28,
+            "profit": 13,
+            "profit_margin": 46.43,
+            "top_product": {
+                "product": "Enterprise CRM Suite",
+                "revenue": 1.5
+            }
+        },
+        {
+            "country": "United Kingdom",
+            "sales_volume": 600,
+            "revenue": 26,
+            "profit": 12,
+            "profit_margin": 46.15,
+            "top_product": {
+                "product": "Virtual Collaboration Platform",
+                "revenue": 0.6
+            }
+        },
+        {
+            "country": "France",
+            "sales_volume": 550,
+            "revenue": 24,
+            "profit": 11,
+            "profit_margin": 45.83,
+            "top_product": {
+                "product": "Data Analytics Platform",
+                "revenue": 1
+            }
+        },
+        {
+            "country": "Canada",
+            "sales_volume": 500,
+            "revenue": 22,
+            "profit": 10,
+            "profit_margin": 45.45,
+            "top_product": {
+                "product": "AI-powered Customer Support System",
+                "revenue": 0.75
+            }
+        },
+        {
+            "country": "Australia",
+            "sales_volume": 450,
+            "revenue": 20,
+            "profit": 9,
+            "profit_margin": 45,
+            "top_product": {
+                "product": "ERP Solution for Small Businesses",
+                "revenue": 0.65
+            }
+        }
+    ],
+    "top_10_products": [
+        {
+            "product_initial":"ECS",
+            "product": "Enterprise CRM Suite",
+            "revenue": 1.5,
+            "profit": 0.75,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"CBPM",
+            "product": "Cloud-based Project Management",
+            "revenue": 1.2,
+            "profit": 0.6,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"DAP",
+            "product": "Data Analytics Platform",
+            "revenue": 1,
+            "profit": 0.48,
+            "profit_margin_percent": 48
+        },
+        {
+            "product_initial":"CS",
+            "product": "Cybersecurity Suite",
+            "revenue": 0.9,
+            "profit": 0.45,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"MADT",
+            "product": "Mobile App Development Tools",
+            "revenue": 0.8,
+            "profit": 0.4,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"ACSS",
+            "product": "AI-powered Customer Support System",
+            "revenue": 0.75,
+            "profit": 0.375,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"SCOS",
+            "product": "Supply Chain Optimization Software",
+            "revenue": 0.7,
+            "profit": 0.35,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"ESSB",
+            "product": "ERP Solution for Small Businesses",
+            "revenue": 0.65,
+            "profit": 0.325,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"VCP",
+            "product": "Virtual Collaboration Platform",
+            "revenue": 0.6,
+            "profit": 0.3,
+            "profit_margin_percent": 50
+        },
+        {
+            "product_initial":"BDT",
+            "product": "Blockchain Development Toolkit",
+            "revenue": 0.55,
+            "profit": 0.275,
+            "profit_margin_percent": 50
+        }
+    ],
+    "quarterly_data": {
+        "Q1": {
+            "total_product_revenue": 2.5,
+            "total_product_profit": 1.25,
+            "total_country_revenue": 125,
+            "total_country_profit": 62.5
+        },
+        "Q2": {
+            "total_product_revenue": 2.5,
+            "total_product_profit": 1.25,
+            "total_country_revenue": 125,
+            "total_country_profit": 62.5
+        },
+        "Q3": {
+            "total_product_revenue": 2.5,
+            "total_product_profit": 1.25,
+            "total_country_revenue": 125,
+            "total_country_profit": 62.5
+        },
+        "Q4": {
+            "total_product_revenue": 2.3,
+            "total_product_profit": 1.15,
+            "total_country_revenue": 115,
+            "total_country_profit": 57.5
+        }
+    },
+    "total_data": {
+        "products": [
+            {
+                "title": "Total Revenue",
+                "value": "$10.3M"
+            },
+            {
+                "title": "Total Profit",
+                "value": "$5.15M"
+            },
+            {
+                "title": "Total Margin %",
+                "value": "50%"
+            }
+        ],
+        "countries": {
+            "total_revenue": 1030,
+            "total_profit": 515,
+            "profit_margin_percent": 50
+        }
+    }
+}
