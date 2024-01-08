@@ -465,7 +465,12 @@ ul.timeline>li {
 
         // ----- #topNavigation -----
         #topNavigation {
+            .nav-link i {
+                position: relative;
+            }
+
             background-color: var(--amj-bg-primary-color);
+
             form {
                 .btn {
                     border: var(--bs-border-width) solid var(--bs-border-color);
@@ -474,20 +479,13 @@ ul.timeline>li {
         }
 
         // #topNavigation {
-        //     .nav-link i {
-        //         position: relative;
-        //     }
-
-        //     background-color: var(--amj-bg-primary-color);
 
         //     .container-fluid {
         //         div:first-child {
         //             justify-content: center;
         //         }
 
-        //         form {
         //             .btn {
-        //                 border: 1px solid #fff;
         //                 color: #fff;
         //             }
         //         }
@@ -503,8 +501,7 @@ ul.timeline>li {
 
                 form {
                     .btn {
-                        border: 1px solid #fff;
-                        color: #fff;
+                        border: var(--bs-border-width) solid var(--bs-border-color);
                     }
                 }
             }
