@@ -18,3 +18,4 @@ def global_context(request):
     return {
         'modal_applications': get_json_data('modalApplications.json')
     }
+
