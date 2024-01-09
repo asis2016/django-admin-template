@@ -515,7 +515,6 @@ ul.timeline>li {
 
                 // margin and padding
                 margin-bottom: 1rem !important;
-                padding-bottom: 0.5rem !important;
             }
         }
     }
@@ -659,7 +658,11 @@ footer {
 @media screen and (max-width:575px) {}
 
 // md ≥ 768px
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .md-pt-0 {
+        padding-top: 0 !important;
+    }
+}
 
 // lg ≥ 992px
 @media screen and (max-width:991px) {
@@ -725,10 +728,6 @@ footer {
         margin-bottom: 1.5rem !important;
     }
 
-    .sm-pt-0 {
-        padding-top: 0 !important;
-    }
-
     // #modalApplication
     #modalApplication {
         .modal-body-lg {
@@ -747,6 +746,10 @@ footer {
 @media screen and (max-width:1199px) {
     .sidebarToggled #mainSidebar {
         margin-left: 0 !important;
+
+        #sidebarUntoggleBtn{
+            display: block !important;
+        }
     }
 
     // ----- ----- ----- .wrapper ----- ----- -----
@@ -785,7 +788,11 @@ footer {
 @media screen and (min-width:576px) {}
 
 // md ≥ 768px
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    .md-mb-0 {
+        margin-bottom: 0 !important;
+    }
+}
 
 // lg ≥ 992px
 @media screen and (min-width:992px) {
